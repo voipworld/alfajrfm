@@ -68,6 +68,7 @@
 		7FD06E2516EF6F8D007F2520 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E2316EF6F8D007F2520 /* NewsVC.m */; };
 		F1575338171DC5E30065BD1A /* icon7272.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575337171DC5E30065BD1A /* icon7272.png */; };
 		F157533A171DC5EE0065BD1A /* icon144144.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575339171DC5EE0065BD1A /* icon144144.png */; };
+		F157533C171DC6560065BD1A /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F157533B171DC6560065BD1A /* Default-Portrait~ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		7FD06E4016EF8283007F2520 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F1575337171DC5E30065BD1A /* icon7272.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon7272.png; sourceTree = "<group>"; };
 		F1575339171DC5EE0065BD1A /* icon144144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144144.png; sourceTree = "<group>"; };
+		F157533B171DC6560065BD1A /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		7FD06DC316EF6E7D007F2520 = {
 			isa = PBXGroup;
 			children = (
+				F157533B171DC6560065BD1A /* Default-Portrait~ipad.png */,
 				F1575339171DC5EE0065BD1A /* icon144144.png */,
 				F1575337171DC5E30065BD1A /* icon7272.png */,
 				7F3F3E6616F7254500B3DE60 /* Default-568h@2x.png */,
@@ -463,6 +466,7 @@
 				7FBA61F11709A15700AB6251 /* Localizable.strings in Resources */,
 				F1575338171DC5E30065BD1A /* icon7272.png in Resources */,
 				F157533A171DC5EE0065BD1A /* icon144144.png in Resources */,
+				F157533C171DC6560065BD1A /* Default-Portrait~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
