@@ -338,10 +338,10 @@ static Float64 secondsWithCMTimeOrZeroIfInvalid(CMTime time) {
 
 
 
-- (void)handleDurationDidChange {
-    movieDuration = player.currentItem.duration;
-    DLog(@"current duration : %@", movieDuration);
-}
+//- (void)handleDurationDidChange {
+//    movieDuration = player.currentItem.duration;
+//    DLog(@"current duration : %@", movieDuration);
+//}
 
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object

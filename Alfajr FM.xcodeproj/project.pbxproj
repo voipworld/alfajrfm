@@ -18,7 +18,6 @@
 		7F3F3E5C16F71BA100B3DE60 /* Alaqsa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E5A16F71BA100B3DE60 /* Alaqsa.jpg */; };
 		7F3F3E5F16F7239300B3DE60 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E5E16F7239300B3DE60 /* icon.png */; };
 		7F3F3E6116F7239900B3DE60 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6016F7239900B3DE60 /* icon@2x.png */; };
-		7F3F3E6316F7252900B3DE60 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6216F7252900B3DE60 /* Default.png */; };
 		7F3F3E6516F7254000B3DE60 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6416F7253F00B3DE60 /* Default@2x.png */; };
 		7F3F3E6716F7254500B3DE60 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6616F7254500B3DE60 /* Default-568h@2x.png */; };
 		7F3F3E6916F72D6900B3DE60 /* Alaqsa_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6816F72D6900B3DE60 /* Alaqsa_small.jpg */; };
@@ -47,7 +46,6 @@
 		7FD06DDF16EF6E7E007F2520 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06DDE16EF6E7E007F2520 /* main.m */; };
 		7FD06DE316EF6E7E007F2520 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06DE216EF6E7E007F2520 /* AppDelegate.m */; };
 		7FD06DE516EF6E7E007F2520 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DE416EF6E7E007F2520 /* Default.png */; };
-		7FD06DE716EF6E7E007F2520 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DE616EF6E7E007F2520 /* Default@2x.png */; };
 		7FD06DE916EF6E7E007F2520 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DE816EF6E7E007F2520 /* Default-568h@2x.png */; };
 		7FD06DEC16EF6E7E007F2520 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DEA16EF6E7E007F2520 /* MainStoryboard.storyboard */; };
 		7FD06DEF16EF6E7E007F2520 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06DEE16EF6E7E007F2520 /* HomeVC.m */; };
@@ -68,7 +66,6 @@
 		7FD06E2516EF6F8D007F2520 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E2316EF6F8D007F2520 /* NewsVC.m */; };
 		F1575338171DC5E30065BD1A /* icon7272.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575337171DC5E30065BD1A /* icon7272.png */; };
 		F157533A171DC5EE0065BD1A /* icon144144.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575339171DC5EE0065BD1A /* icon144144.png */; };
-		F157533C171DC6560065BD1A /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F157533B171DC6560065BD1A /* Default-Portrait~ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -449,7 +446,6 @@
 			files = (
 				7FD06DDD16EF6E7E007F2520 /* InfoPlist.strings in Resources */,
 				7FD06DE516EF6E7E007F2520 /* Default.png in Resources */,
-				7FD06DE716EF6E7E007F2520 /* Default@2x.png in Resources */,
 				7FD06DE916EF6E7E007F2520 /* Default-568h@2x.png in Resources */,
 				7FD06DEC16EF6E7E007F2520 /* MainStoryboard.storyboard in Resources */,
 				7FD06DF116EF6E7E007F2520 /* first.png in Resources */,
@@ -459,14 +455,12 @@
 				7F3F3E5B16F71BA100B3DE60 /* Alaqsa.jpg in Resources */,
 				7F3F3E5F16F7239300B3DE60 /* icon.png in Resources */,
 				7F3F3E6116F7239900B3DE60 /* icon@2x.png in Resources */,
-				7F3F3E6316F7252900B3DE60 /* Default.png in Resources */,
 				7F3F3E6516F7254000B3DE60 /* Default@2x.png in Resources */,
 				7F3F3E6716F7254500B3DE60 /* Default-568h@2x.png in Resources */,
 				7F3F3E6916F72D6900B3DE60 /* Alaqsa_small.jpg in Resources */,
 				7FBA61F11709A15700AB6251 /* Localizable.strings in Resources */,
 				F1575338171DC5E30065BD1A /* icon7272.png in Resources */,
 				F157533A171DC5EE0065BD1A /* icon144144.png in Resources */,
-				F157533C171DC6560065BD1A /* Default-Portrait~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
