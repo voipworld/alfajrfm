@@ -75,7 +75,8 @@
 
 -(IBAction)dismissModalController:(id)sender{
     
-    [self dismissModalViewControllerAnimated:YES];
+// deprecated    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
