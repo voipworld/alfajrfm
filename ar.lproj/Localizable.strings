@@ -1,0 +1,56 @@
+/*
+  Localizable.strings
+  Alfajr FM
+
+  Created by John Doe on 3/19/13.
+  Copyright (c) 2013 Alfajr FM. All rights reserved.
+*/
+
+
+//navigation
+
+"HomeVCTitle" = "الصفحة الرئيسية";
+"NewsVCTitle" = "أخبار";
+"ProgramVCTitle" = "برنامج";
+"SocialVCTitle" = "الاجتماعية";
+
+    "TwitterVCTitle" = "تويتر";
+    "FacebookVCTitle" = "الفيسبوك";
+"SettingsVCTitle" = "إعدادات";
+
+
+//home VC
+
+"alaqsa" = "الأقصى، ونحن مستمدة!";
+
+"Play" = "اللعب";
+"Pause" = "وقفة";
+"Stop" = "إيقاف";
+"Share" = "مشاركة";
+
+
+//settings VC
+
+"use3gLabel" = "Use 3G";
+"streamingQualityLabel" = "الجودة الجري";
+"alwaysUseLowQualityLabel" = "استخدم دائما جودة منخفضة على الجيل الثالث 3G عند";
+"settings" = "إعدادات";
+
+"low" = "منخفض";
+"high" = "عالية";
+
+"on" = "على";
+"off" = "إيقاف";
+
+
+//about VC
+
+
+"aboutInformationLabel" = "نائبا عن الصفحة";
+"about" = "حول";
+
+
+//generic
+
+"back" = "العودة";
+

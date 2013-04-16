@@ -1,0 +1,55 @@
+/*
+  Localizable.strings
+  Alfajr FM
+
+  Created by John Doe on 3/19/13.
+  Copyright (c) 2013 Alfajr FM. All rights reserved.
+*/
+
+
+//navigation
+
+"HomeVCTitle" = "Home";
+"NewsVCTitle" = "News";
+"ProgramVCTitle" = "Program";
+"SocialVCTitle" = "Social";
+    "TwitterVCTitle" = "Twitter";
+    "FacebookVCTitle" = "Facebook";
+"SettingsVCTitle" = "Settings";
+
+
+//home VC
+
+"alaqsa" = "Alaqsa, we are comming!";
+
+"Play" = "Play";
+"Pause" = "Pause";
+"Stop" = "Stop";
+"Share" = "Share";
+
+
+//settings VC
+
+"use3gLabel" = "Use 3G";
+"streamingQualityLabel" = "Streaming Quality";
+"alwaysUseLowQualityLabel" = "Always use low quality when on 3G";
+"settings" = "Settings";
+
+"low" = "low";
+"high" = "high";
+
+"on" = "on";
+"off" = "off";
+
+
+//about VC
+
+
+"aboutInformationLabel" = "About Page placeholder";
+"about" = "About";
+
+
+//generic
+
+"back" = "back";
+

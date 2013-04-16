@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F1E863A16F5266A00FBC70E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E863916F5266A00FBC70E /* SystemConfiguration.framework */; };
+		7F1E863C16F5267400FBC70E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E863B16F5267400FBC70E /* Security.framework */; };
+		7F1E86BF16F52D0500FBC70E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E86BE16F52D0500FBC70E /* CFNetwork.framework */; };
+		7F1E86C116F52D0C00FBC70E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E86C016F52D0C00FBC70E /* CoreLocation.framework */; };
+		7F1E86C316F52D1300FBC70E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E86C216F52D1300FBC70E /* Twitter.framework */; };
+		7F1E86C716F52D2E00FBC70E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E86C616F52D2E00FBC70E /* Accounts.framework */; };
+		7F1E86CD16F52D4B00FBC70E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E86CC16F52D4B00FBC70E /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7F3F3E5B16F71BA100B3DE60 /* Alaqsa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E5A16F71BA100B3DE60 /* Alaqsa.jpg */; };
+		7F3F3E5C16F71BA100B3DE60 /* Alaqsa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E5A16F71BA100B3DE60 /* Alaqsa.jpg */; };
+		7F3F3E5F16F7239300B3DE60 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E5E16F7239300B3DE60 /* icon.png */; };
+		7F3F3E6116F7239900B3DE60 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6016F7239900B3DE60 /* icon@2x.png */; };
+		7F3F3E6316F7252900B3DE60 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6216F7252900B3DE60 /* Default.png */; };
+		7F3F3E6516F7254000B3DE60 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6416F7253F00B3DE60 /* Default@2x.png */; };
+		7F3F3E6716F7254500B3DE60 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6616F7254500B3DE60 /* Default-568h@2x.png */; };
+		7F3F3E6916F72D6900B3DE60 /* Alaqsa_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6816F72D6900B3DE60 /* Alaqsa_small.jpg */; };
+		7F3F3E6A16F72D6900B3DE60 /* Alaqsa_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6816F72D6900B3DE60 /* Alaqsa_small.jpg */; };
+		7F3F3E6D16F7393700B3DE60 /* TwitterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6C16F7393600B3DE60 /* TwitterVC.m */; };
+		7F3F3E6E16F7393700B3DE60 /* TwitterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6C16F7393600B3DE60 /* TwitterVC.m */; };
+		7F3F3E7116F7394600B3DE60 /* FacebookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7016F7394600B3DE60 /* FacebookVC.m */; };
+		7F3F3E7216F7394600B3DE60 /* FacebookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7016F7394600B3DE60 /* FacebookVC.m */; };
+		7F3F3E7B16F7405700B3DE60 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7816F7405600B3DE60 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc "; }; };
+		7F3F3E7C16F7405700B3DE60 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7816F7405600B3DE60 /* Reachability.m */; };
+		7F3F3E7D16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc "; }; };
+		7F3F3E7E16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */; };
+		7F46B3A616F0435400FF2E38 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F46B3A516F0435400FF2E38 /* AVFoundation.framework */; };
+		7F46B3A916F0436F00FF2E38 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F46B3A816F0436F00FF2E38 /* CoreMedia.framework */; };
+		7F46B3AB16F0437600FF2E38 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F46B3AA16F0437600FF2E38 /* MediaPlayer.framework */; };
+		7F46F89916F4862700B3156A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD06E4016EF8283007F2520 /* AudioToolbox.framework */; };
+		7FBA61F11709A15700AB6251 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FBA61F41709A15700AB6251 /* Localizable.strings */; };
+		7FBA61F21709A15700AB6251 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FBA61F41709A15700AB6251 /* Localizable.strings */; };
+		7FBEE56F16F06E25005048A8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBEE56E16F06E25005048A8 /* MessageUI.framework */; };
+		7FC64F7A16FA3AAB00E45009 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC64F7916FA3AAB00E45009 /* SettingsVC.m */; };
+		7FC64F7B16FA3AAB00E45009 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC64F7916FA3AAB00E45009 /* SettingsVC.m */; };
+		7FD06DD316EF6E7E007F2520 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD06DD216EF6E7E007F2520 /* UIKit.framework */; };
+		7FD06DD516EF6E7E007F2520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD06DD416EF6E7E007F2520 /* Foundation.framework */; };
+		7FD06DD716EF6E7E007F2520 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD06DD616EF6E7E007F2520 /* CoreGraphics.framework */; };
+		7FD06DDD16EF6E7E007F2520 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DDB16EF6E7E007F2520 /* InfoPlist.strings */; };
+		7FD06DDF16EF6E7E007F2520 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06DDE16EF6E7E007F2520 /* main.m */; };
+		7FD06DE316EF6E7E007F2520 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06DE216EF6E7E007F2520 /* AppDelegate.m */; };
+		7FD06DE516EF6E7E007F2520 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DE416EF6E7E007F2520 /* Default.png */; };
+		7FD06DE716EF6E7E007F2520 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DE616EF6E7E007F2520 /* Default@2x.png */; };
+		7FD06DE916EF6E7E007F2520 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DE816EF6E7E007F2520 /* Default-568h@2x.png */; };
+		7FD06DEC16EF6E7E007F2520 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DEA16EF6E7E007F2520 /* MainStoryboard.storyboard */; };
+		7FD06DEF16EF6E7E007F2520 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06DEE16EF6E7E007F2520 /* HomeVC.m */; };
+		7FD06DF116EF6E7E007F2520 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DF016EF6E7E007F2520 /* first.png */; };
+		7FD06DF316EF6E7E007F2520 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DF216EF6E7E007F2520 /* first@2x.png */; };
+		7FD06DF616EF6E7E007F2520 /* SocialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06DF516EF6E7E007F2520 /* SocialVC.m */; };
+		7FD06DF816EF6E7E007F2520 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DF716EF6E7E007F2520 /* second.png */; };
+		7FD06DFA16EF6E7E007F2520 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06DF916EF6E7E007F2520 /* second@2x.png */; };
+		7FD06E0316EF6E7E007F2520 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD06DD216EF6E7E007F2520 /* UIKit.framework */; };
+		7FD06E0416EF6E7E007F2520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD06DD416EF6E7E007F2520 /* Foundation.framework */; };
+		7FD06E0C16EF6E7E007F2520 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FD06E0A16EF6E7E007F2520 /* InfoPlist.strings */; };
+		7FD06E0F16EF6E7E007F2520 /* Alfajr_FMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E0E16EF6E7E007F2520 /* Alfajr_FMTests.m */; };
+		7FD06E1C16EF6F60007F2520 /* ProgramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E1B16EF6F60007F2520 /* ProgramVC.m */; };
+		7FD06E1D16EF6F60007F2520 /* ProgramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E1B16EF6F60007F2520 /* ProgramVC.m */; };
+		7FD06E2016EF6F77007F2520 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E1F16EF6F77007F2520 /* AboutVC.m */; };
+		7FD06E2116EF6F77007F2520 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E1F16EF6F77007F2520 /* AboutVC.m */; };
+		7FD06E2416EF6F8D007F2520 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E2316EF6F8D007F2520 /* NewsVC.m */; };
+		7FD06E2516EF6F8D007F2520 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E2316EF6F8D007F2520 /* NewsVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FD06E0516EF6E7E007F2520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FD06DC516EF6E7D007F2520 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FD06DCD16EF6E7E007F2520;
+			remoteInfo = "Alfajr FM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F009A7D16F0658E00558CDB /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		7F1E863916F5266A00FBC70E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7F1E863B16F5267400FBC70E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7F1E86BE16F52D0500FBC70E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7F1E86C016F52D0C00FBC70E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7F1E86C216F52D1300FBC70E /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		7F1E86C616F52D2E00FBC70E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		7F1E86CC16F52D4B00FBC70E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7F3F3E5A16F71BA100B3DE60 /* Alaqsa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Alaqsa.jpg; sourceTree = "<group>"; };
+		7F3F3E5E16F7239300B3DE60 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		7F3F3E6016F7239900B3DE60 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		7F3F3E6216F7252900B3DE60 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7F3F3E6416F7253F00B3DE60 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7F3F3E6616F7254500B3DE60 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7F3F3E6816F72D6900B3DE60 /* Alaqsa_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Alaqsa_small.jpg; sourceTree = "<group>"; };
+		7F3F3E6B16F7393600B3DE60 /* TwitterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterVC.h; sourceTree = "<group>"; };
+		7F3F3E6C16F7393600B3DE60 /* TwitterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterVC.m; sourceTree = "<group>"; };
+		7F3F3E6F16F7394500B3DE60 /* FacebookVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookVC.h; sourceTree = "<group>"; };
+		7F3F3E7016F7394600B3DE60 /* FacebookVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookVC.m; sourceTree = "<group>"; };
+		7F3F3E7716F7405600B3DE60 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		7F3F3E7816F7405600B3DE60 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7F3F3E7916F7405600B3DE60 /* ReachabilityAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityAppDelegate.h; sourceTree = "<group>"; };
+		7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityAppDelegate.m; sourceTree = "<group>"; };
+		7F46B3A516F0435400FF2E38 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7F46B3A816F0436F00FF2E38 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7F46B3AA16F0437600FF2E38 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7FBA61F31709A15700AB6251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7FBA61F51709A27C00AB6251 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7FBA61F61709A29400AB6251 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7FBEE56E16F06E25005048A8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7FC64F7916FA3AAB00E45009 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		7FD06DCE16EF6E7E007F2520 /* Alfajr FM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alfajr FM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD06DD216EF6E7E007F2520 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FD06DD416EF6E7E007F2520 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FD06DD616EF6E7E007F2520 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FD06DDA16EF6E7E007F2520 /* Alfajr FM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alfajr FM-Info.plist"; sourceTree = "<group>"; };
+		7FD06DDC16EF6E7E007F2520 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FD06DDE16EF6E7E007F2520 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FD06DE016EF6E7E007F2520 /* Alfajr FM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alfajr FM-Prefix.pch"; sourceTree = "<group>"; };
+		7FD06DE116EF6E7E007F2520 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7FD06DE216EF6E7E007F2520 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7FD06DE416EF6E7E007F2520 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7FD06DE616EF6E7E007F2520 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7FD06DE816EF6E7E007F2520 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7FD06DEB16EF6E7E007F2520 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7FD06DED16EF6E7E007F2520 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		7FD06DEE16EF6E7E007F2520 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		7FD06DF016EF6E7E007F2520 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		7FD06DF216EF6E7E007F2520 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		7FD06DF416EF6E7E007F2520 /* SocialVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialVC.h; sourceTree = "<group>"; };
+		7FD06DF516EF6E7E007F2520 /* SocialVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialVC.m; sourceTree = "<group>"; };
+		7FD06DF716EF6E7E007F2520 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		7FD06DF916EF6E7E007F2520 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		7FD06E0016EF6E7E007F2520 /* Alfajr FMTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alfajr FMTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD06E0916EF6E7E007F2520 /* Alfajr FMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alfajr FMTests-Info.plist"; sourceTree = "<group>"; };
+		7FD06E0B16EF6E7E007F2520 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FD06E0D16EF6E7E007F2520 /* Alfajr_FMTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alfajr_FMTests.h; sourceTree = "<group>"; };
+		7FD06E0E16EF6E7E007F2520 /* Alfajr_FMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Alfajr_FMTests.m; sourceTree = "<group>"; };
+		7FD06E1A16EF6F60007F2520 /* ProgramVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramVC.h; sourceTree = "<group>"; };
+		7FD06E1B16EF6F60007F2520 /* ProgramVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramVC.m; sourceTree = "<group>"; };
+		7FD06E1E16EF6F77007F2520 /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		7FD06E1F16EF6F77007F2520 /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		7FD06E2216EF6F8D007F2520 /* NewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsVC.h; sourceTree = "<group>"; };
+		7FD06E2316EF6F8D007F2520 /* NewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsVC.m; sourceTree = "<group>"; };
+		7FD06E3E16EF827D007F2520 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		7FD06E4016EF8283007F2520 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FD06DCB16EF6E7E007F2520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1E863A16F5266A00FBC70E /* SystemConfiguration.framework in Frameworks */,
+				7F1E86CD16F52D4B00FBC70E /* CoreFoundation.framework in Frameworks */,
+				7F1E86C716F52D2E00FBC70E /* Accounts.framework in Frameworks */,
+				7F1E86C316F52D1300FBC70E /* Twitter.framework in Frameworks */,
+				7F1E86C116F52D0C00FBC70E /* CoreLocation.framework in Frameworks */,
+				7F1E86BF16F52D0500FBC70E /* CFNetwork.framework in Frameworks */,
+				7FBEE56F16F06E25005048A8 /* MessageUI.framework in Frameworks */,
+				7F1E863C16F5267400FBC70E /* Security.framework in Frameworks */,
+				7F46F89916F4862700B3156A /* AudioToolbox.framework in Frameworks */,
+				7F46B3AB16F0437600FF2E38 /* MediaPlayer.framework in Frameworks */,
+				7F46B3A916F0436F00FF2E38 /* CoreMedia.framework in Frameworks */,
+				7F46B3A616F0435400FF2E38 /* AVFoundation.framework in Frameworks */,
+				7FD06DD316EF6E7E007F2520 /* UIKit.framework in Frameworks */,
+				7FD06DD516EF6E7E007F2520 /* Foundation.framework in Frameworks */,
+				7FD06DD716EF6E7E007F2520 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD06DFC16EF6E7E007F2520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD06E0316EF6E7E007F2520 /* UIKit.framework in Frameworks */,
+				7FD06E0416EF6E7E007F2520 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F009A8116F0659400558CDB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7F009A7D16F0658E00558CDB /* SettingsVC.h */,
+				7FC64F7916FA3AAB00E45009 /* SettingsVC.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		7FD06DC316EF6E7D007F2520 = {
+			isa = PBXGroup;
+			children = (
+				7F3F3E6616F7254500B3DE60 /* Default-568h@2x.png */,
+				7F3F3E6416F7253F00B3DE60 /* Default@2x.png */,
+				7F3F3E6216F7252900B3DE60 /* Default.png */,
+				7F3F3E6016F7239900B3DE60 /* icon@2x.png */,
+				7F3F3E5E16F7239300B3DE60 /* icon.png */,
+				7FD06DD816EF6E7E007F2520 /* Alfajr FM */,
+				7FD06E0716EF6E7E007F2520 /* Alfajr FMTests */,
+				7FD06DD116EF6E7E007F2520 /* Frameworks */,
+				7FD06DCF16EF6E7E007F2520 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FD06DCF16EF6E7E007F2520 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06DCE16EF6E7E007F2520 /* Alfajr FM.app */,
+				7FD06E0016EF6E7E007F2520 /* Alfajr FMTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FD06DD116EF6E7E007F2520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F1E86CC16F52D4B00FBC70E /* CoreFoundation.framework */,
+				7F1E86C616F52D2E00FBC70E /* Accounts.framework */,
+				7F1E86C216F52D1300FBC70E /* Twitter.framework */,
+				7F1E86C016F52D0C00FBC70E /* CoreLocation.framework */,
+				7F1E86BE16F52D0500FBC70E /* CFNetwork.framework */,
+				7F1E863B16F5267400FBC70E /* Security.framework */,
+				7F1E863916F5266A00FBC70E /* SystemConfiguration.framework */,
+				7FBEE56E16F06E25005048A8 /* MessageUI.framework */,
+				7F46B3AA16F0437600FF2E38 /* MediaPlayer.framework */,
+				7F46B3A816F0436F00FF2E38 /* CoreMedia.framework */,
+				7F46B3A516F0435400FF2E38 /* AVFoundation.framework */,
+				7FD06E4016EF8283007F2520 /* AudioToolbox.framework */,
+				7FD06E3E16EF827D007F2520 /* CoreAudio.framework */,
+				7FD06DD216EF6E7E007F2520 /* UIKit.framework */,
+				7FD06DD416EF6E7E007F2520 /* Foundation.framework */,
+				7FD06DD616EF6E7E007F2520 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FD06DD816EF6E7E007F2520 /* Alfajr FM */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06E3116EF8103007F2520 /* Radio */,
+				7FD06DE116EF6E7E007F2520 /* AppDelegate.h */,
+				7FD06DE216EF6E7E007F2520 /* AppDelegate.m */,
+				7FD06DEA16EF6E7E007F2520 /* MainStoryboard.storyboard */,
+				7FD06E1816EF6F21007F2520 /* Home */,
+				7FD06E2616EF6F92007F2520 /* News */,
+				7FD06E2816EF6FA0007F2520 /* Program */,
+				7FD06E1916EF6F28007F2520 /* Social */,
+				7FD06E2916EF6FAF007F2520 /* More */,
+				7FD06DD916EF6E7E007F2520 /* Supporting Files */,
+			);
+			path = "Alfajr FM";
+			sourceTree = "<group>";
+		};
+		7FD06DD916EF6E7E007F2520 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F3F3E5A16F71BA100B3DE60 /* Alaqsa.jpg */,
+				7F3F3E6816F72D6900B3DE60 /* Alaqsa_small.jpg */,
+				7FBA61F41709A15700AB6251 /* Localizable.strings */,
+				7FD06DDA16EF6E7E007F2520 /* Alfajr FM-Info.plist */,
+				7FD06DDB16EF6E7E007F2520 /* InfoPlist.strings */,
+				7FD06DDE16EF6E7E007F2520 /* main.m */,
+				7FD06DE016EF6E7E007F2520 /* Alfajr FM-Prefix.pch */,
+				7FD06DE416EF6E7E007F2520 /* Default.png */,
+				7FD06DE616EF6E7E007F2520 /* Default@2x.png */,
+				7FD06DE816EF6E7E007F2520 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FD06E0716EF6E7E007F2520 /* Alfajr FMTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06E0D16EF6E7E007F2520 /* Alfajr_FMTests.h */,
+				7FD06E0E16EF6E7E007F2520 /* Alfajr_FMTests.m */,
+				7FD06E0816EF6E7E007F2520 /* Supporting Files */,
+			);
+			path = "Alfajr FMTests";
+			sourceTree = "<group>";
+		};
+		7FD06E0816EF6E7E007F2520 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06E0916EF6E7E007F2520 /* Alfajr FMTests-Info.plist */,
+				7FD06E0A16EF6E7E007F2520 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FD06E1816EF6F21007F2520 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06DED16EF6E7E007F2520 /* HomeVC.h */,
+				7FD06DEE16EF6E7E007F2520 /* HomeVC.m */,
+				7F3F3E7716F7405600B3DE60 /* Reachability.h */,
+				7F3F3E7816F7405600B3DE60 /* Reachability.m */,
+				7F3F3E7916F7405600B3DE60 /* ReachabilityAppDelegate.h */,
+				7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */,
+				7FD06DF016EF6E7E007F2520 /* first.png */,
+				7FD06DF216EF6E7E007F2520 /* first@2x.png */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		7FD06E1916EF6F28007F2520 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06DF416EF6E7E007F2520 /* SocialVC.h */,
+				7FD06DF516EF6E7E007F2520 /* SocialVC.m */,
+				7F3F3E6B16F7393600B3DE60 /* TwitterVC.h */,
+				7F3F3E6C16F7393600B3DE60 /* TwitterVC.m */,
+				7F3F3E6F16F7394500B3DE60 /* FacebookVC.h */,
+				7F3F3E7016F7394600B3DE60 /* FacebookVC.m */,
+				7FD06DF716EF6E7E007F2520 /* second.png */,
+				7FD06DF916EF6E7E007F2520 /* second@2x.png */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		7FD06E2616EF6F92007F2520 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06E2216EF6F8D007F2520 /* NewsVC.h */,
+				7FD06E2316EF6F8D007F2520 /* NewsVC.m */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		7FD06E2716EF6F9A007F2520 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06E1E16EF6F77007F2520 /* AboutVC.h */,
+				7FD06E1F16EF6F77007F2520 /* AboutVC.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		7FD06E2816EF6FA0007F2520 /* Program */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06E1A16EF6F60007F2520 /* ProgramVC.h */,
+				7FD06E1B16EF6F60007F2520 /* ProgramVC.m */,
+			);
+			name = Program;
+			sourceTree = "<group>";
+		};
+		7FD06E2916EF6FAF007F2520 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				7FD06E2716EF6F9A007F2520 /* About */,
+				7F009A8116F0659400558CDB /* Settings */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		7FD06E3116EF8103007F2520 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Radio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FD06DCD16EF6E7E007F2520 /* Alfajr FM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD06E1216EF6E7E007F2520 /* Build configuration list for PBXNativeTarget "Alfajr FM" */;
+			buildPhases = (
+				7FD06DCA16EF6E7E007F2520 /* Sources */,
+				7FD06DCB16EF6E7E007F2520 /* Frameworks */,
+				7FD06DCC16EF6E7E007F2520 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alfajr FM";
+			productName = "Alfajr FM";
+			productReference = 7FD06DCE16EF6E7E007F2520 /* Alfajr FM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FD06DFF16EF6E7E007F2520 /* Alfajr FMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD06E1516EF6E7E007F2520 /* Build configuration list for PBXNativeTarget "Alfajr FMTests" */;
+			buildPhases = (
+				7FD06DFB16EF6E7E007F2520 /* Sources */,
+				7FD06DFC16EF6E7E007F2520 /* Frameworks */,
+				7FD06DFD16EF6E7E007F2520 /* Resources */,
+				7FD06DFE16EF6E7E007F2520 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FD06E0616EF6E7E007F2520 /* PBXTargetDependency */,
+			);
+			name = "Alfajr FMTests";
+			productName = "Alfajr FMTests";
+			productReference = 7FD06E0016EF6E7E007F2520 /* Alfajr FMTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FD06DC516EF6E7D007F2520 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Alfajr FM";
+			};
+			buildConfigurationList = 7FD06DC816EF6E7D007F2520 /* Build configuration list for PBXProject "Alfajr FM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				es,
+				ar,
+			);
+			mainGroup = 7FD06DC316EF6E7D007F2520;
+			productRefGroup = 7FD06DCF16EF6E7E007F2520 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FD06DCD16EF6E7E007F2520 /* Alfajr FM */,
+				7FD06DFF16EF6E7E007F2520 /* Alfajr FMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FD06DCC16EF6E7E007F2520 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD06DDD16EF6E7E007F2520 /* InfoPlist.strings in Resources */,
+				7FD06DE516EF6E7E007F2520 /* Default.png in Resources */,
+				7FD06DE716EF6E7E007F2520 /* Default@2x.png in Resources */,
+				7FD06DE916EF6E7E007F2520 /* Default-568h@2x.png in Resources */,
+				7FD06DEC16EF6E7E007F2520 /* MainStoryboard.storyboard in Resources */,
+				7FD06DF116EF6E7E007F2520 /* first.png in Resources */,
+				7FD06DF316EF6E7E007F2520 /* first@2x.png in Resources */,
+				7FD06DF816EF6E7E007F2520 /* second.png in Resources */,
+				7FD06DFA16EF6E7E007F2520 /* second@2x.png in Resources */,
+				7F3F3E5B16F71BA100B3DE60 /* Alaqsa.jpg in Resources */,
+				7F3F3E5F16F7239300B3DE60 /* icon.png in Resources */,
+				7F3F3E6116F7239900B3DE60 /* icon@2x.png in Resources */,
+				7F3F3E6316F7252900B3DE60 /* Default.png in Resources */,
+				7F3F3E6516F7254000B3DE60 /* Default@2x.png in Resources */,
+				7F3F3E6716F7254500B3DE60 /* Default-568h@2x.png in Resources */,
+				7F3F3E6916F72D6900B3DE60 /* Alaqsa_small.jpg in Resources */,
+				7FBA61F11709A15700AB6251 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD06DFD16EF6E7E007F2520 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD06E0C16EF6E7E007F2520 /* InfoPlist.strings in Resources */,
+				7F3F3E5C16F71BA100B3DE60 /* Alaqsa.jpg in Resources */,
+				7F3F3E6A16F72D6900B3DE60 /* Alaqsa_small.jpg in Resources */,
+				7FBA61F21709A15700AB6251 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FD06DFE16EF6E7E007F2520 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FD06DCA16EF6E7E007F2520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD06DDF16EF6E7E007F2520 /* main.m in Sources */,
+				7FD06DE316EF6E7E007F2520 /* AppDelegate.m in Sources */,
+				7FD06DEF16EF6E7E007F2520 /* HomeVC.m in Sources */,
+				7FD06DF616EF6E7E007F2520 /* SocialVC.m in Sources */,
+				7FD06E1C16EF6F60007F2520 /* ProgramVC.m in Sources */,
+				7FD06E2016EF6F77007F2520 /* AboutVC.m in Sources */,
+				7FD06E2416EF6F8D007F2520 /* NewsVC.m in Sources */,
+				7F3F3E6D16F7393700B3DE60 /* TwitterVC.m in Sources */,
+				7F3F3E7116F7394600B3DE60 /* FacebookVC.m in Sources */,
+				7F3F3E7B16F7405700B3DE60 /* Reachability.m in Sources */,
+				7F3F3E7D16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */,
+				7FC64F7A16FA3AAB00E45009 /* SettingsVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD06DFB16EF6E7E007F2520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD06E0F16EF6E7E007F2520 /* Alfajr_FMTests.m in Sources */,
+				7FD06E1D16EF6F60007F2520 /* ProgramVC.m in Sources */,
+				7FD06E2116EF6F77007F2520 /* AboutVC.m in Sources */,
+				7FD06E2516EF6F8D007F2520 /* NewsVC.m in Sources */,
+				7F3F3E6E16F7393700B3DE60 /* TwitterVC.m in Sources */,
+				7F3F3E7216F7394600B3DE60 /* FacebookVC.m in Sources */,
+				7F3F3E7C16F7405700B3DE60 /* Reachability.m in Sources */,
+				7F3F3E7E16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */,
+				7FC64F7B16FA3AAB00E45009 /* SettingsVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FD06E0616EF6E7E007F2520 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FD06DCD16EF6E7E007F2520 /* Alfajr FM */;
+			targetProxy = 7FD06E0516EF6E7E007F2520 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FBA61F41709A15700AB6251 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FBA61F31709A15700AB6251 /* en */,
+				7FBA61F51709A27C00AB6251 /* es */,
+				7FBA61F61709A29400AB6251 /* ar */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7FD06DDB16EF6E7E007F2520 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FD06DDC16EF6E7E007F2520 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FD06DEA16EF6E7E007F2520 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FD06DEB16EF6E7E007F2520 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		7FD06E0A16EF6E7E007F2520 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FD06E0B16EF6E7E007F2520 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FD06E1016EF6E7E007F2520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7FD06E1116EF6E7E007F2520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FD06E1316EF6E7E007F2520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kirill Volchinskiy (CA53M84PGF)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alfajr FM/Alfajr FM-Prefix.pch";
+				INFOPLIST_FILE = "Alfajr FM/Alfajr FM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E0EB83DB-5FB0-4355-ABCA-B8464567AA45";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7FD06E1416EF6E7E007F2520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kirill Volchinskiy (CA53M84PGF)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alfajr FM/Alfajr FM-Prefix.pch";
+				INFOPLIST_FILE = "Alfajr FM/Alfajr FM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E0EB83DB-5FB0-4355-ABCA-B8464567AA45";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7FD06E1616EF6E7E007F2520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Alfajr FM.app/Alfajr FM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alfajr FM/Alfajr FM-Prefix.pch";
+				INFOPLIST_FILE = "Alfajr FMTests/Alfajr FMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7FD06E1716EF6E7E007F2520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Alfajr FM.app/Alfajr FM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alfajr FM/Alfajr FM-Prefix.pch";
+				INFOPLIST_FILE = "Alfajr FMTests/Alfajr FMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FD06DC816EF6E7D007F2520 /* Build configuration list for PBXProject "Alfajr FM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD06E1016EF6E7E007F2520 /* Debug */,
+				7FD06E1116EF6E7E007F2520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD06E1216EF6E7E007F2520 /* Build configuration list for PBXNativeTarget "Alfajr FM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD06E1316EF6E7E007F2520 /* Debug */,
+				7FD06E1416EF6E7E007F2520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD06E1516EF6E7E007F2520 /* Build configuration list for PBXNativeTarget "Alfajr FMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD06E1616EF6E7E007F2520 /* Debug */,
+				7FD06E1716EF6E7E007F2520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FD06DC516EF6E7D007F2520 /* Project object */;
+}
