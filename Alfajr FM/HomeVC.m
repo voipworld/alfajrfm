@@ -370,7 +370,8 @@ static Float64 secondsWithCMTimeOrZeroIfInvalid(CMTime time) {
                         //NSLog(@"meta %@",source);
                         metadatas.text = source;
                        // [metadatas sizeToFit];
-                        metadatas.textAlignment = UITextAlignmentCenter;
+                        // metadatas.textAlignment = UITextAlignmentCenter;
+                        metadatas.textAlignment = NSTextAlignmentCenter;
                         
                     }
                 }
