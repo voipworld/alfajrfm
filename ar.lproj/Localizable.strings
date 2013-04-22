@@ -17,7 +17,7 @@
     "TwitterVCTitle" = "تويتر";
     "FacebookVCTitle" = "الفيسبوك";
 "SettingsVCTitle" = "إعدادات";
-
+"MoreVCTitle" = "أكثر";
 
 //home VC
 
@@ -53,4 +53,5 @@
 //generic
 
 "back" = "العودة";
-
+"loading" = "تحميل";
+"stopped" = "توقف";

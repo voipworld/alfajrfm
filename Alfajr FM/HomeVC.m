@@ -8,10 +8,6 @@
 
 #import "HomeVC.h"
 
-#define stream1 @"http://live.vobradio.org:8000/live" //highquality
-
-#define stream2 @"http://live.vobradio.org:8000/live24"
-
 
 @interface HomeVC ()
 
@@ -33,6 +29,7 @@
 @synthesize airplay;
 
 @synthesize alaqsa;
+@synthesize home;
 
 
 
@@ -59,6 +56,13 @@
     self.stopButton.title = NSLocalizedString(@"Stop", nil);
     self.pauseButton.title = NSLocalizedString(@"Pause", nil);
     self.shareButton.title = NSLocalizedString(@"Share", nil);
+    self.home.text = NSLocalizedString(@"HomeVCTitle", nil);
+    
+    streamDefinitions = [[StreamDefinitions alloc] init];
+    
+    stream1 = streamDefinitions.stream1;
+    stream2 = streamDefinitions.stream2;
+    
     
 }
 - (void)awakeFromNib
@@ -283,7 +287,7 @@
     
     
     nowplaying.hidden = YES;
-    metadatas.text = @"Loading...";
+    metadatas.text = NSLocalizedString(@"loading", nil);
     
     [self.airplay setShowsVolumeSlider:YES];
     [self.airplay setShowsRouteButton:YES];
@@ -436,7 +440,8 @@ static Float64 secondsWithCMTimeOrZeroIfInvalid(CMTime time) {
 -(IBAction)stop:(id)sender{
     
     nowplaying.hidden = YES;
-    metadatas.text = @"Stopped";
+    metadatas.text = NSLocalizedString(@"stopped", nil);
+    
     
      [player pause];
     [self setButtonsForStoppedState];

@@ -13,10 +13,9 @@
 
 @interface SocialVC : UIViewController {
     
-    
-    
+    IBOutlet UINavigationBar *navBar2;
 }
-
+@property(nonatomic,retain)IBOutlet UINavigationBar *navBar2;
 
 
 

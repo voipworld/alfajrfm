@@ -14,6 +14,7 @@
 @implementation ProgramVC
 
 @synthesize programWebview;
+@synthesize navBar2;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,7 @@
 - (void)viewDidLoad
 {
     [self initMisc];
+     [self awakeFromNib];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -47,6 +49,8 @@
 - (void)awakeFromNib
 {
     self.title =  NSLocalizedString(@"ProgramVCTitle", nil);
+     self.navBar2.topItem.title =  NSLocalizedString(@"ProgramVCTitle", nil);
+
 }
 
 

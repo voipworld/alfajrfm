@@ -11,8 +11,9 @@
 @interface NewsVC : UIViewController {
 
     IBOutlet UIWebView *newsWebview;
-
+    IBOutlet UINavigationBar *navBar2;
 }
+@property(nonatomic,retain)IBOutlet UINavigationBar *navBar2;
 
 @property(nonatomic,retain)IBOutlet UIWebView *newsWebview;
 

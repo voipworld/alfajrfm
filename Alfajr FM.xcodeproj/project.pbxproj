@@ -64,6 +64,10 @@
 		7FD06E2116EF6F77007F2520 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E1F16EF6F77007F2520 /* AboutVC.m */; };
 		7FD06E2416EF6F8D007F2520 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E2316EF6F8D007F2520 /* NewsVC.m */; };
 		7FD06E2516EF6F8D007F2520 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD06E2316EF6F8D007F2520 /* NewsVC.m */; };
+		7FDC1E571725EA1700238C0C /* MoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC1E561725EA1700238C0C /* MoreVC.m */; };
+		7FDC1E581725EA1700238C0C /* MoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC1E561725EA1700238C0C /* MoreVC.m */; };
+		7FDC1E5B1725EE1700238C0C /* StreamDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC1E5A1725EE1700238C0C /* StreamDefinitions.m */; };
+		7FDC1E5C1725EE1700238C0C /* StreamDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC1E5A1725EE1700238C0C /* StreamDefinitions.m */; };
 		F1575338171DC5E30065BD1A /* icon7272.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575337171DC5E30065BD1A /* icon7272.png */; };
 		F157533A171DC5EE0065BD1A /* icon144144.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575339171DC5EE0065BD1A /* icon144144.png */; };
 /* End PBXBuildFile section */
@@ -145,6 +149,10 @@
 		7FD06E2316EF6F8D007F2520 /* NewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsVC.m; sourceTree = "<group>"; };
 		7FD06E3E16EF827D007F2520 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		7FD06E4016EF8283007F2520 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7FDC1E551725EA1700238C0C /* MoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreVC.h; sourceTree = "<group>"; };
+		7FDC1E561725EA1700238C0C /* MoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreVC.m; sourceTree = "<group>"; };
+		7FDC1E591725EE1700238C0C /* StreamDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamDefinitions.h; sourceTree = "<group>"; };
+		7FDC1E5A1725EE1700238C0C /* StreamDefinitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamDefinitions.m; sourceTree = "<group>"; };
 		F1575337171DC5E30065BD1A /* icon7272.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon7272.png; sourceTree = "<group>"; };
 		F1575339171DC5EE0065BD1A /* icon144144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144144.png; sourceTree = "<group>"; };
 		F157533B171DC6560065BD1A /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
@@ -300,6 +308,8 @@
 		7FD06E1816EF6F21007F2520 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7FDC1E591725EE1700238C0C /* StreamDefinitions.h */,
+				7FDC1E5A1725EE1700238C0C /* StreamDefinitions.m */,
 				7FD06DED16EF6E7E007F2520 /* HomeVC.h */,
 				7FD06DEE16EF6E7E007F2520 /* HomeVC.m */,
 				7F3F3E7716F7405600B3DE60 /* Reachability.h */,
@@ -357,6 +367,8 @@
 		7FD06E2916EF6FAF007F2520 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				7FDC1E551725EA1700238C0C /* MoreVC.h */,
+				7FDC1E561725EA1700238C0C /* MoreVC.m */,
 				7FD06E2716EF6F9A007F2520 /* About */,
 				7F009A8116F0659400558CDB /* Settings */,
 			);
@@ -510,6 +522,8 @@
 				7F3F3E7B16F7405700B3DE60 /* Reachability.m in Sources */,
 				7F3F3E7D16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */,
 				7FC64F7A16FA3AAB00E45009 /* SettingsVC.m in Sources */,
+				7FDC1E571725EA1700238C0C /* MoreVC.m in Sources */,
+				7FDC1E5B1725EE1700238C0C /* StreamDefinitions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +540,8 @@
 				7F3F3E7C16F7405700B3DE60 /* Reachability.m in Sources */,
 				7F3F3E7E16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */,
 				7FC64F7B16FA3AAB00E45009 /* SettingsVC.m in Sources */,
+				7FDC1E581725EA1700238C0C /* MoreVC.m in Sources */,
+				7FDC1E5C1725EE1700238C0C /* StreamDefinitions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

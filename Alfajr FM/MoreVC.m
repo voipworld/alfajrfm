@@ -1,24 +1,22 @@
 //
-//  ContactVC.m
+//  MoreVC.m
 //  Alfajr FM
 //
-//  Created by John Doe on 3/12/13.
+//  Created by John Doe on 4/22/13.
 //  Copyright (c) 2013 Alfajr FM. All rights reserved.
 //
 
-#import "NewsVC.h"
-#define kNEWS_URL @"http://www.alfajrfm.com/news/"
+#import "MoreVC.h"
 
-
-@interface NewsVC ()
+@interface MoreVC ()
 
 @end
 
-@implementation NewsVC
-
-@synthesize newsWebview;
+@implementation MoreVC
 @synthesize navBar2;
 
+@synthesize about;
+@synthesize settings;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,9 +29,8 @@
 
 - (void)viewDidLoad
 {
-    [self initMisc];
-    [self awakeFromNib];
     [super viewDidLoad];
+     [self awakeFromNib];
 	// Do any additional setup after loading the view.
 }
 
@@ -42,21 +39,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (void)awakeFromNib
 {
-   self.title =  NSLocalizedString(@"NewsVCTitle", nil);
-    self.navBar2.topItem.title =  NSLocalizedString(@"NewsVCTitle", nil);
+    self.title =  NSLocalizedString(@"MoreVCTitle", nil);
+    self.navBar2.topItem.title =  NSLocalizedString(@"MoreVCTitle", nil);
+    self.about.titleLabel.text = NSLocalizedString(@"about", nil);
+     self.settings.titleLabel.text = NSLocalizedString(@"settings", nil);
 }
-
-#pragma mark -
-#pragma mark init
-
-
--(void)initMisc{
-    
-    [self.newsWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kNEWS_URL]]];
-}
-
 
 @end
+   

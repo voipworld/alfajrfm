@@ -16,7 +16,7 @@
     "TwitterVCTitle" = "Twitter";
     "FacebookVCTitle" = "Facebook";
 "SettingsVCTitle" = "Settings";
-
+"MoreVCTitle" = "More";
 
 //home VC
 
@@ -52,4 +52,5 @@
 //generic
 
 "back" = "back";
-
+"loading" = "Loading...";
+"stopped" = "Stopped";

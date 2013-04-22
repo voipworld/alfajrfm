@@ -13,7 +13,10 @@
     
     IBOutlet UIWebView *programWebview;
     
+    IBOutlet UINavigationBar *navBar2;
 }
+@property(nonatomic,retain)IBOutlet UINavigationBar *navBar2;
+
 
 @property(nonatomic,retain)IBOutlet UIWebView *programWebview;
 

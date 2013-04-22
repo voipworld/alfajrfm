@@ -19,7 +19,7 @@
 #import "Reachability.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 
-
+#import "StreamDefinitions.h"
 
 @class AVPlayer;
 @class AVPlayerItem;
@@ -53,12 +53,16 @@
     
     
     IBOutlet UILabel *alaqsa;
-    
+    IBOutlet UILabel *home;
     
     Reachability* internetReachable;
     Reachability* hostReachable;
  
     UIAlertView *alert;
+    
+    StreamDefinitions *streamDefinitions;
+    NSString *stream1;
+    NSString *stream2;
     
     
 }
@@ -80,6 +84,8 @@
 @property (nonatomic, assign) CMTime movieDuration;
 
 @property (strong, nonatomic) IBOutlet UILabel *alaqsa;
+
+@property (strong, nonatomic) IBOutlet UILabel *home;
 
 - (void)observeValueForKeyPath:(NSString *)keyPath   ofObject:(id)object
                         change:(NSDictionary *)change context:(void *)context;
