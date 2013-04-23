@@ -60,6 +60,8 @@
     self.shareButton.title = NSLocalizedString(@"Share", nil);
   
     self.navBar2.topItem.title =  NSLocalizedString(@"HomeVCTitle", nil);
+    self.title =  NSLocalizedString(@"HomeVCTitle", nil);
+    
     streamDefinitions = [URLS sharedInstance];
     
     stream1 = streamDefinitions.stream1;
