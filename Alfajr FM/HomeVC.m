@@ -51,6 +51,9 @@
 
 -(void)initMisc{
     
+    self.alaqsa.text = @"";
+    self.alaqsa = nil;
+    
    // self.alaqsa.text = NSLocalizedString(@"alaqsa", nil);
     self.playButton.title = NSLocalizedString(@"Play", nil);
     self.stopButton.title = NSLocalizedString(@"Stop", nil);
