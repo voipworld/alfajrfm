@@ -21,7 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     [self awakeFromNib];
+    
+    [self misc];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -33,15 +34,28 @@
 
 - (void)awakeFromNib
 {
-    self.title =  NSLocalizedString(@"SocialVCTitle", nil);
-    self.navBar2.topItem.title =  NSLocalizedString(@"SocialVCTitle", nil);
+     [self misc];
     
-    self.facebook.titleLabel.text =  NSLocalizedString(@"follow on twitter", nil);
-    self.twitter.titleLabel.text =  NSLocalizedString(@"connect on facebook", nil);
+  }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    
+    [self misc];
+    
 }
 
 
+-(void)misc{
+    
+    self.title =  NSLocalizedString(@"SocialVCTitle", nil);
+    self.navBar2.topItem.title =  NSLocalizedString(@"SocialVCTitle", nil);
+    
+    self.twitter.titleLabel.text =  NSLocalizedString(@"follow on twitter", nil);
+    self.facebook.titleLabel.text =  NSLocalizedString(@"connect on facebook", nil);
+    
+    
+}
 #pragma mark -
 #pragma mark Share actions
 
