@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-         [self misc];
+         
 	// Do any additional setup after loading the view.
 }
 
@@ -41,13 +41,13 @@
 }
 - (void)awakeFromNib
 {
-    [self misc];
+   // [self misc];
     
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     
-        [self misc];
+    [self misc];
     
 }
 -(void)misc{
@@ -55,8 +55,9 @@
     
     self.title =  NSLocalizedString(@"MoreVCTitle", nil);
     self.navBar2.topItem.title =  NSLocalizedString(@"MoreVCTitle", nil);
-    self.about.titleLabel.text = NSLocalizedString(@"about", nil);
-    self.settings.titleLabel.text = NSLocalizedString(@"settings", nil);
+    
+    [self.about setTitle: NSLocalizedString(@"about", nil) forState:UIControlStateNormal];
+    [self.settings setTitle: NSLocalizedString(@"settings", nil) forState:UIControlStateNormal];
 
     
 }

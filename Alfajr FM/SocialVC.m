@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
     
-    [self misc];
+  //  [self misc];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -50,12 +50,14 @@
     
     self.title =  NSLocalizedString(@"SocialVCTitle", nil);
     self.navBar2.topItem.title =  NSLocalizedString(@"SocialVCTitle", nil);
+
     
-    self.twitter.titleLabel.text =  NSLocalizedString(@"follow on twitter", nil);
-    self.facebook.titleLabel.text =  NSLocalizedString(@"connect on facebook", nil);
-    
-    
+    [self.twitter setTitle: NSLocalizedString(@"follow_on_twitter", nil) forState:UIControlStateNormal];
+    [self.facebook setTitle:  NSLocalizedString(@"connect_on_facebook", nil) forState:UIControlStateNormal];
+        
 }
+
+
 #pragma mark -
 #pragma mark Share actions
 

@@ -49,8 +49,8 @@
 "about" = "Sobre";
 
 // vc sociales
-"connect on facebook" = "connecta en Facebook";
-"follow on twitter" = "siga en twitter";
+"connect_on_facebook" = "connecta en Facebook";
+"follow_on_twitter" = "siga en twitter";
 
 
 //generic

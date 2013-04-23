@@ -50,8 +50,8 @@
 
 
 //social vc
-"connect on facebook" = "connect on facebook";
-"follow on twitter" = "follow on twitter";
+"connect_on_facebook" = "connect on facebook";
+"follow_on_twitter" = "follow on twitter";
 
 //generic
 

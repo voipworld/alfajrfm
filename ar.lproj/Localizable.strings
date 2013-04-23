@@ -50,8 +50,8 @@
 "about" = "حول";
 
 //social 
-"connect on facebook" = "الاتصال في الفيسبوك";
-"follow on twitter" = "على متابعة التغريد";
+"connect_on_facebook" = "الاتصال في الفيسبوك";
+"follow_on_twitter" = "على متابعة التغريد";
 
 //generic
 
