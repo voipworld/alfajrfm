@@ -178,7 +178,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="second" id="6"/>
                     <connections>
+                        <outlet property="facebook" destination="67y-8g-iiz" id="AZ5-K8-HAa"/>
                         <outlet property="navBar2" destination="mu9-XQ-PJF" id="7zq-RZ-LQ8"/>
+                        <outlet property="twitter" destination="Ou9-x8-X6d" id="eVQ-hz-ee8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
@@ -669,105 +671,6 @@
         <image name="second" width="16" height="16"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="AboutVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutVC.h"/>
-            <relationships>
-                <relationship kind="action" name="dismissModalController:"/>
-                <relationship kind="outlet" name="aboutInformationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="infoWebView" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="navBarTitle" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="FacebookVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FacebookVC.h"/>
-            <relationships>
-                <relationship kind="action" name="dismissModalController:"/>
-                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="facebookWebview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="HomeVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeVC.h"/>
-            <relationships>
-                <relationship kind="action" name="pause:"/>
-                <relationship kind="action" name="play:"/>
-                <relationship kind="action" name="stop:"/>
-                <relationship kind="outlet" name="airplay" candidateClass="MPVolumeView"/>
-                <relationship kind="outlet" name="alaqsa" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="flexible" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="home" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="metadatas" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nowplaying" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pauseButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="playButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="playButton2" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="stopButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
-            </relationships>
-        </class>
-        <class className="MPVolumeView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MPVolumeView.h"/>
-        </class>
-        <class className="MoreVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoreVC.h"/>
-            <relationships>
-                <relationship kind="outlet" name="about" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="settings" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="NewsVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsVC.h"/>
-            <relationships>
-                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="newsWebview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="ProgramVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProgramVC.h"/>
-            <relationships>
-                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="programWebview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SettingsVC" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsVC.h"/>
-            <relationships>
-                <relationship kind="action" name="didOnly3GToggled:"/>
-                <relationship kind="action" name="didToggleQuality:"/>
-                <relationship kind="action" name="dismissModalController:"/>
-                <relationship kind="outlet" name="alwaysUseLowQualityLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="alwaysUseLowQualityWhenOn3G" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
-                <relationship kind="outlet" name="quality" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="streamingQualityLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="threeG" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="use3gLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SocialVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialVC.h"/>
-            <relationships>
-                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
-            </relationships>
-        </class>
-        <class className="TwitterVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterVC.h"/>
-            <relationships>
-                <relationship kind="action" name="dismissModalController:"/>
-                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="twitterWebview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

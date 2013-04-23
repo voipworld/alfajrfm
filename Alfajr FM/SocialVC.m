@@ -15,6 +15,9 @@
 @implementation SocialVC
 @synthesize navBar2;
 
+@synthesize facebook;
+@synthesize twitter;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,6 +35,9 @@
 {
     self.title =  NSLocalizedString(@"SocialVCTitle", nil);
     self.navBar2.topItem.title =  NSLocalizedString(@"SocialVCTitle", nil);
+    
+    self.facebook.titleLabel.text =  NSLocalizedString(@"follow on twitter", nil);
+    self.twitter.titleLabel.text =  NSLocalizedString(@"connect on facebook", nil);
 
 }
 

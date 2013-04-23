@@ -14,8 +14,16 @@
 @interface SocialVC : UIViewController {
     
     IBOutlet UINavigationBar *navBar2;
+    
+    IBOutlet UIButton *facebook;
+    IBOutlet UIButton *twitter;
+    
 }
 @property(nonatomic,retain)IBOutlet UINavigationBar *navBar2;
+
+@property(nonatomic,retain)IBOutlet UIButton *facebook;
+
+@property(nonatomic,retain)IBOutlet UIButton *twitter;
 
 
 
