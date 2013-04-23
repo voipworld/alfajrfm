@@ -29,8 +29,7 @@
 @synthesize airplay;
 
 @synthesize alaqsa;
-@synthesize home;
-
+@synthesize navBar2;
 
 
 - (void)viewDidLoad
@@ -59,8 +58,8 @@
     self.stopButton.title = NSLocalizedString(@"Stop", nil);
     self.pauseButton.title = NSLocalizedString(@"Pause", nil);
     self.shareButton.title = NSLocalizedString(@"Share", nil);
-    self.home.text = NSLocalizedString(@"HomeVCTitle", nil);
-    
+  
+    self.navBar2.topItem.title =  NSLocalizedString(@"HomeVCTitle", nil);
     streamDefinitions = [URLS sharedInstance];
     
     stream1 = streamDefinitions.stream1;

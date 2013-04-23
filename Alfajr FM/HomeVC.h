@@ -53,7 +53,7 @@
     
     
     IBOutlet UILabel *alaqsa;
-    IBOutlet UILabel *home;
+  
     
     Reachability* internetReachable;
     Reachability* hostReachable;
@@ -64,8 +64,11 @@
     NSString *stream1;
     NSString *stream2;
     
-    
+    IBOutlet UINavigationBar *navBar2;
 }
+@property(nonatomic,retain)IBOutlet UINavigationBar *navBar2;
+
+
 
 @property (nonatomic) BOOL *allowsAirPlay;
 @property(nonatomic,retain) IBOutlet MPVolumeView *airplay;
@@ -85,7 +88,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *alaqsa;
 
-@property (strong, nonatomic) IBOutlet UILabel *home;
+
 
 - (void)observeValueForKeyPath:(NSString *)keyPath   ofObject:(id)object
                         change:(NSDictionary *)change context:(void *)context;
