@@ -19,7 +19,7 @@
 #import "Reachability.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 
-#import "StreamDefinitions.h"
+#import "URLS.h"
 
 @class AVPlayer;
 @class AVPlayerItem;
@@ -60,7 +60,7 @@
  
     UIAlertView *alert;
     
-    StreamDefinitions *streamDefinitions;
+    URLS *streamDefinitions;
     NSString *stream1;
     NSString *stream2;
     

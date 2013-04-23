@@ -7,7 +7,7 @@
 //
 
 #import "NewsVC.h"
-#define kNEWS_URL @"http://www.alfajrfm.com/news/"
+
 
 
 @interface NewsVC ()
@@ -54,6 +54,10 @@
 
 
 -(void)initMisc{
+    
+    URLS *urls = [URLS sharedInstance];
+    
+    NSString *kNEWS_URL = urls.news;
     
     [self.newsWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kNEWS_URL]]];
 }

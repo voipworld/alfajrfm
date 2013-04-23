@@ -8,8 +8,6 @@
 
 #import "ProgramVC.h"
 
-#define kPROGRAM_URL @"http://www.alfajrfm.com/"
-
 
 @implementation ProgramVC
 
@@ -59,6 +57,11 @@
 
 
 -(void)initMisc{
+    
+    URLS *urls = [URLS sharedInstance];
+    
+    NSString *kPROGRAM_URL = urls.program;
+    
     
    [self.programWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kPROGRAM_URL]]];
 }

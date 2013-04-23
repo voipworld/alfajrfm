@@ -7,7 +7,6 @@
 //
 
 #import "FacebookVC.h"
-#define kURL @"http://facebook.com/alfajrfm"
 
 
 @interface FacebookVC ()
@@ -48,6 +47,10 @@
 
 
 -(void)initMisc{
+    
+    URLS *urls = [URLS sharedInstance];
+    
+    NSString *kURL = urls.facebook;
     
     [self.facebookWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kURL]]];
     

@@ -7,7 +7,6 @@
 //
 
 #import "TwitterVC.h"
-#define kURL @"http://twitter.com/alfajrfm"
 
 @interface TwitterVC ()
 
@@ -47,6 +46,12 @@
 
 
 -(void)initMisc{
+    
+    
+    URLS *urls = [URLS sharedInstance];
+    
+    NSString *kURL = urls.twitter;
+    
     
     [self.twitterWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kURL]]];
     

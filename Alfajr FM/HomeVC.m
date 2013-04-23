@@ -58,7 +58,7 @@
     self.shareButton.title = NSLocalizedString(@"Share", nil);
     self.home.text = NSLocalizedString(@"HomeVCTitle", nil);
     
-    streamDefinitions = [[StreamDefinitions alloc] init];
+    streamDefinitions = [URLS sharedInstance];
     
     stream1 = streamDefinitions.stream1;
     stream2 = streamDefinitions.stream2;
