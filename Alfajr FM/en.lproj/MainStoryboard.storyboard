@@ -81,19 +81,19 @@
                             <constraint firstItem="nQ9-xE-lpT" firstAttribute="centerX" secondItem="nTk-hJ-ptD" secondAttribute="centerX" type="default" id="2rz-Vy-BVH"/>
                             <constraint firstAttribute="bottom" secondItem="Zwu-1E-2uY" secondAttribute="bottom" constant="321" id="5GS-nE-Vd0"/>
                             <constraint firstItem="6qQ-yJ-5KL" firstAttribute="top" secondItem="cwL-VY-X6V" secondAttribute="top" type="default" id="7rJ-pW-Sbg"/>
-                            <constraint firstItem="bzR-uI-g1O" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="9Lx-Qw-orO"/>
                             <constraint firstItem="Zwu-1E-2uY" firstAttribute="top" secondItem="bzR-uI-g1O" secondAttribute="bottom" type="default" id="Ly0-8a-o5W"/>
                             <constraint firstItem="6qQ-yJ-5KL" firstAttribute="centerX" secondItem="cwL-VY-X6V" secondAttribute="centerX" type="default" id="N7a-Mb-cqT"/>
                             <constraint firstItem="6qQ-yJ-5KL" firstAttribute="centerX" secondItem="Zwu-1E-2uY" secondAttribute="centerX" type="default" id="QO4-ui-yOW"/>
                             <constraint firstItem="rA5-Jr-N2T" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="155" id="RHo-P9-zEd"/>
                             <constraint firstItem="nTk-hJ-ptD" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="T06-FG-ire"/>
                             <constraint firstItem="6qQ-yJ-5KL" firstAttribute="top" secondItem="16" secondAttribute="top" constant="89" id="Z5X-ML-C7k"/>
-                            <constraint firstAttribute="trailing" secondItem="Zwu-1E-2uY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bko-dL-zGZ"/>
                             <constraint firstAttribute="bottom" secondItem="nQ9-xE-lpT" secondAttribute="bottom" constant="69" id="eKV-Dt-pAf"/>
-                            <constraint firstItem="nTk-hJ-ptD" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="neL-uT-fgk"/>
+                            <constraint firstItem="bzR-uI-g1O" firstAttribute="centerX" secondItem="16" secondAttribute="centerX" type="default" id="giz-39-jCj"/>
                             <constraint firstItem="Zwu-1E-2uY" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nrg-ML-XYu"/>
                             <constraint firstItem="rA5-Jr-N2T" firstAttribute="top" secondItem="16" secondAttribute="top" constant="176" id="rKD-BX-aPr"/>
                             <constraint firstItem="bzR-uI-g1O" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="s0x-iL-IAm"/>
+                            <constraint firstItem="Zwu-1E-2uY" firstAttribute="centerX" secondItem="bzR-uI-g1O" secondAttribute="centerX" type="default" id="uJR-JQ-1R5"/>
+                            <constraint firstItem="nTk-hJ-ptD" firstAttribute="trailing" secondItem="bzR-uI-g1O" secondAttribute="trailing" type="default" id="udE-Et-4tg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="7"/>
@@ -102,6 +102,7 @@
                         <outlet property="alaqsa" destination="nQ9-xE-lpT" id="IfG-cA-1Xb"/>
                         <outlet property="flexible" destination="eoK-EH-Uhn" id="vak-z0-w5L"/>
                         <outlet property="metadatas" destination="6qQ-yJ-5KL" id="et0-UL-TrI"/>
+                        <outlet property="navBar2" destination="bzR-uI-g1O" id="RPg-ti-WX7"/>
                         <outlet property="pauseButton" destination="0lo-fH-gpK" id="rmC-RE-TWY"/>
                         <outlet property="playButton" destination="Tlc-Sg-ehi" id="sfh-i6-6jU"/>
                         <outlet property="shareButton" destination="Vcq-ec-fun" id="SAc-Yv-35x"/>
@@ -740,7 +741,6 @@
         <class className="SettingsVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsVC.h"/>
             <relationships>
-                <relationship kind="action" name="alwaysUseLowQualityWhenOn3GToggled:"/>
                 <relationship kind="action" name="didOnly3GToggled:"/>
                 <relationship kind="action" name="didToggleQuality:"/>
                 <relationship kind="action" name="dismissModalController:"/>
