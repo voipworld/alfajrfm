@@ -373,8 +373,12 @@ static Float64 secondsWithCMTimeOrZeroIfInvalid(CMTime time) {
                             nowplaying.hidden = NO;
                         }
                         NSString *source = metaItem.stringValue;
-                        //NSLog(@"meta %@",source);
-                        metadatas.text = source;
+                        char converted[([source length] + 1)];
+                        [source getCString:converted maxLength:([source length] + 1) encoding: NSISOLatin1StringEncoding];
+                        
+                        NSString *converted_str = [NSString stringWithCString:converted encoding:NSUTF8StringEncoding];
+                        NSLog(@"meta %@",converted_str);
+                        metadatas.text = converted_str;
                        // [metadatas sizeToFit];
                         // metadatas.textAlignment = UITextAlignmentCenter;
                         metadatas.textAlignment = NSTextAlignmentCenter;
