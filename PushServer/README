@@ -1,0 +1,81 @@
+Apple Push Notification Server.
+------------------------------
+
+These script allow you to manage push notifications for one or more apps.
+
+FEATURES:
+
+* Multiple App management.
+* Multiple Certificate Management (Development/Production).
+* Sample web form to submit push notifications.
+* Monitor RSS feeds.
+* Single connection per certificate to the APNS servers.
+* Message queue.
+* Apple Feedback processing to remove devices that should not subscribed any more. 
+* Send push notifications only to test devices.
+
+REQUIREMENTS:
+
+* PHP 5.x
+* mySQL 
+
+PORTS:
+It requires ports 2195 and 2196 to communicate with the APNS servers.
+
+
+INSTALL:
+
+* Create a new mySQL DB. 
+* Run the "resources/APNS.sql" file to create the DB tables. 
+* Customise the 'config.php' file.
+
+SETUP YOUR APP:
+
+* Copy your ck.pem certificates to the certificates folder. 'ck' means the certificate and key components are contained on the same file.
+* Add an app entry to the mySQL 'Apps' table.
+* Add a certificate to the mySQL 'Cerficates' table.
+* Add an entry to the 'CertificateServer' table.
+
+
+BASIC USAGE:
+
+1) Registering new devices:
+	
+	Your iPhone apps can register new devices by calling a URL in this form:
+	http://YOURDOMAIN.COM/registerDevice.php?appId=YOURAPPId&deviceToken=YOURDEVICETOKEN
+
+2) Submit messages to the queue:
+
+	To submit a message to the subscribed devices use the following:
+	http://YOURDOMAIN.COM/subscriptionForm.php
+
+3) Send messages to the devices from the message queue:
+
+	http://YOURDOMAIN.COM/processMessageQueue.php
+
+4) Process feedback:
+
+	http://YOURDOMAIN.COM/processFeedback.php
+
+
+ADVANCED USAGE:
+
+At the moment don't provide documentation for setting up RSS feeds and creating multiple subscriptions with an app. But should be easy to setup by just looking at the project code.
+
+* Feeds are registered via the registerDevice.php script by passing the 'feedUrl' and 'feedEnable' parameters.
+* processFeeds.php should run as a cron job or schedule task.
+* Multiple subscriptions within an app are registered by passing the 'appSubscriptionId' parameter.
+
+SCHEDULING:
+
+Ideally the processMesageQueue.php script should run from a cron job or scheduled task.
+After running processMesageQueue.php you should run processFeedback.php to get 
+notified of devices that no longer have the appId installed.
+
+
+SECURITY:
+
+Please store these scripts in a secure folder so they are not access
+by non authorised users.
+
+I hope you enjoy these scripts! Please fork :)
