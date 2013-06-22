@@ -186,7 +186,7 @@
 
 -(void)postNotif{
     
-       // [[NSNotificationCenter defaultCenter] postNotificationName:@"settingsToggled" object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"settingsToggled" object:nil];
 
 }
 
