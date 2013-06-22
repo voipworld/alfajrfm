@@ -122,8 +122,8 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     
     use3G = [ud boolForKey:@"use3G"];
-    streamingHighQuality = [ud boolForKey:@"alwaysUseLowQualityWhenOn3G"];
-    alwaysUseLowQualityWhenOn3G = [ud boolForKey:@"streamingHighQuality"];
+    alwaysUseLowQualityWhenOn3G = [ud boolForKey:@"alwaysUseLowQualityWhenOn3G"];
+    streamingHighQuality = [ud boolForKey:@"streamingHighQuality"];
     
     BOOL _on3G ;
     BOOL _streamQualityHigh = streamingHighQuality;
@@ -246,7 +246,7 @@
 
 -(void)initPlayerWithChangedURL:(BOOL)highQualityON{
     
-    if(highQualityON){
+    if(highQualityON==YES){
          DLog(@"stream1");
         [self initPlayer:stream1];
         
