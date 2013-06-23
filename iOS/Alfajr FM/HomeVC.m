@@ -195,7 +195,7 @@
                     _streamQualityHigh = NO;
                 } else {
                     
-                    _streamQualityHigh = YES;
+                    _streamQualityHigh = streamingHighQuality;
                 }
             
                 [self initPlayerWithChangedURL:_streamQualityHigh];
