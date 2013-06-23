@@ -300,6 +300,10 @@
     
     NSURL *url = [NSURL URLWithString:streamUrl];
     
+    asset = nil;
+    playerItem = nil;
+    player = nil;
+    
     asset = [AVURLAsset URLAssetWithURL:url options:nil];
     playerItem = [AVPlayerItem playerItemWithAsset:asset];
     player = [AVPlayer playerWithPlayerItem:playerItem];
