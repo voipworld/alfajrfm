@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1E6CA81797332100068C34 /* RadioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E6CA71797332100068C34 /* RadioPlayer.m */; };
+		7F1E6CA91797332100068C34 /* RadioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E6CA71797332100068C34 /* RadioPlayer.m */; };
 		7F1E863A16F5266A00FBC70E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E863916F5266A00FBC70E /* SystemConfiguration.framework */; };
 		7F1E863C16F5267400FBC70E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E863B16F5267400FBC70E /* Security.framework */; };
 		7F1E86BF16F52D0500FBC70E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1E86BE16F52D0500FBC70E /* CFNetwork.framework */; };
@@ -84,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		7F009A7D16F0658E00558CDB /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		7F1E6CA61797332100068C34 /* RadioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioPlayer.h; sourceTree = "<group>"; };
+		7F1E6CA71797332100068C34 /* RadioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioPlayer.m; sourceTree = "<group>"; };
 		7F1E863916F5266A00FBC70E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7F1E863B16F5267400FBC70E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7F1E86BE16F52D0500FBC70E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -308,14 +312,8 @@
 		7FD06E1816EF6F21007F2520 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7FDC1E591725EE1700238C0C /* URLS.h */,
-				7FDC1E5A1725EE1700238C0C /* URLS.m */,
 				7FD06DED16EF6E7E007F2520 /* HomeVC.h */,
 				7FD06DEE16EF6E7E007F2520 /* HomeVC.m */,
-				7F3F3E7716F7405600B3DE60 /* Reachability.h */,
-				7F3F3E7816F7405600B3DE60 /* Reachability.m */,
-				7F3F3E7916F7405600B3DE60 /* ReachabilityAppDelegate.h */,
-				7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */,
 				7FD06DF016EF6E7E007F2520 /* first.png */,
 				7FD06DF216EF6E7E007F2520 /* first@2x.png */,
 			);
@@ -378,6 +376,14 @@
 		7FD06E3116EF8103007F2520 /* Radio */ = {
 			isa = PBXGroup;
 			children = (
+				7F3F3E7716F7405600B3DE60 /* Reachability.h */,
+				7F3F3E7816F7405600B3DE60 /* Reachability.m */,
+				7F3F3E7916F7405600B3DE60 /* ReachabilityAppDelegate.h */,
+				7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */,
+				7FDC1E591725EE1700238C0C /* URLS.h */,
+				7FDC1E5A1725EE1700238C0C /* URLS.m */,
+				7F1E6CA61797332100068C34 /* RadioPlayer.h */,
+				7F1E6CA71797332100068C34 /* RadioPlayer.m */,
 			);
 			name = Radio;
 			sourceTree = "<group>";
@@ -524,6 +530,7 @@
 				7FC64F7A16FA3AAB00E45009 /* SettingsVC.m in Sources */,
 				7FDC1E571725EA1700238C0C /* MoreVC.m in Sources */,
 				7FDC1E5B1725EE1700238C0C /* URLS.m in Sources */,
+				7F1E6CA81797332100068C34 /* RadioPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +549,7 @@
 				7FC64F7B16FA3AAB00E45009 /* SettingsVC.m in Sources */,
 				7FDC1E581725EA1700238C0C /* MoreVC.m in Sources */,
 				7FDC1E5C1725EE1700238C0C /* URLS.m in Sources */,
+				7F1E6CA91797332100068C34 /* RadioPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +611,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kirill Volchinskiy (CA53M84PGF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kirill Volchinskiy (CA53M84PGF)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -618,6 +627,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "B675F101-0808-4A9B-95BD-8071A0CAED6D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B675F101-0808-4A9B-95BD-8071A0CAED6D";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -631,7 +642,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kirill Volchinskiy (CA53M84PGF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kirill Volchinskiy (CA53M84PGF)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -639,6 +651,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "B675F101-0808-4A9B-95BD-8071A0CAED6D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B675F101-0808-4A9B-95BD-8071A0CAED6D";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
@@ -39,7 +39,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="eoK-EH-Uhn"/>
                                     <barButtonItem title="Share" id="Vcq-ec-fun">
                                         <connections>
-                                            <action selector="didTouchUpInsideShare:" destination="2" id="U0O-Dm-KBS"/>
+                                            <action selector="share:" destination="2" id="lwB-lH-o6V"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -79,16 +79,16 @@
                             <constraint firstItem="nTk-hJ-ptD" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="0Cg-zd-yiD"/>
                             <constraint firstItem="bzR-uI-g1O" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="0Q3-XD-VRt"/>
                             <constraint firstItem="nQ9-xE-lpT" firstAttribute="centerX" secondItem="nTk-hJ-ptD" secondAttribute="centerX" type="default" id="2rz-Vy-BVH"/>
-                            <constraint firstAttribute="bottom" secondItem="Zwu-1E-2uY" secondAttribute="bottom" constant="321" id="5GS-nE-Vd0"/>
                             <constraint firstItem="6qQ-yJ-5KL" firstAttribute="top" secondItem="cwL-VY-X6V" secondAttribute="top" type="default" id="7rJ-pW-Sbg"/>
-                            <constraint firstItem="Zwu-1E-2uY" firstAttribute="top" secondItem="bzR-uI-g1O" secondAttribute="bottom" type="default" id="Ly0-8a-o5W"/>
-                            <constraint firstItem="6qQ-yJ-5KL" firstAttribute="centerX" secondItem="cwL-VY-X6V" secondAttribute="centerX" type="default" id="N7a-Mb-cqT"/>
+                            <constraint firstAttribute="bottom" secondItem="Zwu-1E-2uY" secondAttribute="bottom" constant="309" id="ObM-VO-rSm"/>
+                            <constraint firstItem="6qQ-yJ-5KL" firstAttribute="top" secondItem="16" secondAttribute="top" constant="89" id="Or6-GX-781"/>
                             <constraint firstItem="6qQ-yJ-5KL" firstAttribute="centerX" secondItem="Zwu-1E-2uY" secondAttribute="centerX" type="default" id="QO4-ui-yOW"/>
                             <constraint firstItem="rA5-Jr-N2T" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="155" id="RHo-P9-zEd"/>
                             <constraint firstItem="nTk-hJ-ptD" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="T06-FG-ire"/>
-                            <constraint firstItem="6qQ-yJ-5KL" firstAttribute="top" secondItem="16" secondAttribute="top" constant="89" id="Z5X-ML-C7k"/>
                             <constraint firstAttribute="bottom" secondItem="nQ9-xE-lpT" secondAttribute="bottom" constant="69" id="eKV-Dt-pAf"/>
-                            <constraint firstItem="bzR-uI-g1O" firstAttribute="centerX" secondItem="16" secondAttribute="centerX" type="default" id="giz-39-jCj"/>
+                            <constraint firstItem="nQ9-xE-lpT" firstAttribute="centerX" secondItem="cwL-VY-X6V" secondAttribute="centerX" type="default" id="gfb-tz-boA"/>
+                            <constraint firstItem="Zwu-1E-2uY" firstAttribute="top" secondItem="16" secondAttribute="top" constant="51" id="go8-Dx-AOS"/>
+                            <constraint firstItem="Zwu-1E-2uY" firstAttribute="centerX" secondItem="16" secondAttribute="centerX" type="default" id="lQy-9Z-u8Q"/>
                             <constraint firstItem="Zwu-1E-2uY" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nrg-ML-XYu"/>
                             <constraint firstItem="rA5-Jr-N2T" firstAttribute="top" secondItem="16" secondAttribute="top" constant="176" id="rKD-BX-aPr"/>
                             <constraint firstItem="bzR-uI-g1O" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="s0x-iL-IAm"/>
@@ -98,8 +98,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="7"/>
                     <connections>
-                        <outlet property="airplay" destination="Zwu-1E-2uY" id="d27-0V-812"/>
-                        <outlet property="alaqsa" destination="nQ9-xE-lpT" id="IfG-cA-1Xb"/>
+                        <outlet property="alaqsaUILabel" destination="nQ9-xE-lpT" id="5bt-Ax-R4h"/>
                         <outlet property="flexible" destination="eoK-EH-Uhn" id="vak-z0-w5L"/>
                         <outlet property="metadatas" destination="6qQ-yJ-5KL" id="et0-UL-TrI"/>
                         <outlet property="navBar2" destination="bzR-uI-g1O" id="RPg-ti-WX7"/>
