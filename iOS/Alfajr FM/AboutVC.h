@@ -11,7 +11,7 @@
 @interface AboutVC : UIViewController {
     
     
-    IBOutlet UILabel *aboutInformationLabel;
+    IBOutlet UITextView *aboutInformationLabel;
     
     IBOutlet UIBarButtonItem *backButton;
     IBOutlet UIWebView *infoWebView;
@@ -22,7 +22,7 @@
 
 @property(nonatomic,retain)IBOutlet UIWebView *infoWebView;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
-@property (strong, nonatomic) IBOutlet UILabel *aboutInformationLabel;
+@property (strong, nonatomic) IBOutlet UITextView *aboutInformationLabel;
 @property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
 @property (strong, nonatomic) IBOutlet UINavigationItem *navBarTitle;
 -(IBAction)dismissModalController:(id)sender;

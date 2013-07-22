@@ -337,29 +337,30 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="About page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSk-Sn-Gx4">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="About Page UITextView" translatesAutoresizingMaskIntoConstraints="NO" id="dCM-IV-1hJ">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="365" id="iLV-Bv-QPy"/>
+                                    <constraint firstAttribute="height" constant="374" id="WS2-T4-zt4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aLG-Mi-aSi" firstAttribute="top" secondItem="EDY-E8-fgU" secondAttribute="top" type="default" id="5S3-24-NbU"/>
-                            <constraint firstItem="dSk-Sn-Gx4" firstAttribute="leading" secondItem="EDY-E8-fgU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="B4D-2b-D37"/>
-                            <constraint firstItem="dSk-Sn-Gx4" firstAttribute="top" secondItem="EDY-E8-fgU" secondAttribute="top" constant="66" id="GE4-5F-t8w"/>
+                            <constraint firstAttribute="trailing" secondItem="dCM-IV-1hJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QgF-kp-HYo"/>
+                            <constraint firstAttribute="bottom" secondItem="dCM-IV-1hJ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="TFp-I8-McN"/>
                             <constraint firstItem="aLG-Mi-aSi" firstAttribute="trailing" secondItem="EDY-E8-fgU" secondAttribute="trailing" type="default" id="X73-Z8-KIa"/>
-                            <constraint firstAttribute="trailing" secondItem="dSk-Sn-Gx4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Xec-Qt-fdU"/>
+                            <constraint firstItem="dCM-IV-1hJ" firstAttribute="leading" secondItem="EDY-E8-fgU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aW3-sC-a1T"/>
                             <constraint firstItem="aLG-Mi-aSi" firstAttribute="leading" secondItem="EDY-E8-fgU" secondAttribute="leading" type="default" id="zaA-Q5-WI1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" id="P2b-1n-kvh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="aboutInformationLabel" destination="dSk-Sn-Gx4" id="dP4-UZ-uE3"/>
+                        <outlet property="aboutInformationLabel" destination="dCM-IV-1hJ" id="Z4e-uT-7n3"/>
                         <outlet property="backButton" destination="2UO-CN-vxY" id="vGS-YG-jaA"/>
                         <outlet property="navBar" destination="aLG-Mi-aSi" id="aJG-Ig-si7"/>
                         <outlet property="navBarTitle" destination="ddv-jN-Qx1" id="Fnc-uH-fOu"/>

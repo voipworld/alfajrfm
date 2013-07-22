@@ -66,6 +66,12 @@
     self.backButton.title = NSLocalizedString(@"back", nil);
     
     self.aboutInformationLabel.text = NSLocalizedString(@"aboutInformationLabel", nil);
+    self.aboutInformationLabel.textAlignment = NSTextAlignmentCenter;
+   
+    CGFloat topCorrect = ([self.aboutInformationLabel bounds].size.height - [self.aboutInformationLabel contentSize].height * [self.aboutInformationLabel zoomScale])/2.0;
+    topCorrect = ( topCorrect < 0.0 ? 0.0 : topCorrect );
+    self.aboutInformationLabel.contentOffset = (CGPoint){.x = 0, .y = -topCorrect};
+    [self.aboutInformationLabel setNeedsDisplay];
     
     self.title = NSLocalizedString(@"about", nil);    
     self.navBarTitle.title = NSLocalizedString(@"about", nil);    
@@ -75,7 +81,7 @@
 
 -(IBAction)dismissModalController:(id)sender{
     
-// deprecated    [self dismissModalViewControllerAnimated:YES];
+
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
