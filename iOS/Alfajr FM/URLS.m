@@ -8,8 +8,12 @@
 
 #import "URLS.h"
 
-#define stream11 @"http://live.vobradio.org:8000/live" //highquality
-#define stream22 @"http://live.vobradio.org:8000/live24"
+//#define stream11 @"http://live.vobradio.org:8000/live" //highquality
+//#define stream22 @"http://live.vobradio.org:8000/live24"
+
+#define stream11 @"http://s2.voscast.com:7716" //highquality
+#define stream22 @"http://s2.voscast.com:7716"
+
 
 #define kNEWS_URL @"http://www.alfajrfm.com/news/"
 #define kPROGRAM_URL @"http://www.alfajrfm.com/"
