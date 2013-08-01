@@ -111,7 +111,7 @@
 
 -(void)setMetadata:(NSString *)metadata{
    
-    if(!metadata || [metadata isEqualToString:@""]){
+    if(!metadata || [metadata isEqualToString:@""] || [metadata isEqualToString:@"Unknown"]){
         
         [metadatas setHidden:YES];
         metadatas.text = @"";
