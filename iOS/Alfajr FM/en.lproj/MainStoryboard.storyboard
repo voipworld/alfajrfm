@@ -21,23 +21,23 @@
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="nTk-hJ-ptD">
                                 <items>
-                                    <barButtonItem title="Play" id="Tlc-Sg-ehi">
+                                    <barButtonItem image="play.png" id="Tlc-Sg-ehi">
                                         <connections>
                                             <action selector="play:" destination="2" id="yKj-DN-YvZ"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Pause" id="0lo-fH-gpK">
+                                    <barButtonItem image="pause.png" id="0lo-fH-gpK">
                                         <connections>
                                             <action selector="pause:" destination="2" id="y5C-UK-f5Q"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Stop" id="b30-vz-JUi">
+                                    <barButtonItem image="stop.png" id="b30-vz-JUi">
                                         <connections>
                                             <action selector="stop:" destination="2" id="S2C-op-det"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="eoK-EH-Uhn"/>
-                                    <barButtonItem title="Share" id="Vcq-ec-fun">
+                                    <barButtonItem image="share.png" id="Vcq-ec-fun">
                                         <connections>
                                             <action selector="share:" destination="2" id="lwB-lH-o6V"/>
                                         </connections>
@@ -96,7 +96,7 @@
                             <constraint firstItem="nTk-hJ-ptD" firstAttribute="trailing" secondItem="bzR-uI-g1O" secondAttribute="trailing" type="default" id="udE-Et-4tg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="7"/>
                     <connections>
                         <outlet property="alaqsaUILabel" destination="nQ9-xE-lpT" id="5bt-Ax-R4h"/>
                         <outlet property="flexible" destination="eoK-EH-Uhn" id="vak-z0-w5L"/>
@@ -172,7 +172,7 @@
                             <constraint firstItem="mu9-XQ-PJF" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="t1a-GD-AUj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Social" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Social" image="social.png" id="6"/>
                     <connections>
                         <outlet property="facebook" destination="67y-8g-iiz" id="AZ5-K8-HAa"/>
                         <outlet property="navBar2" destination="mu9-XQ-PJF" id="7zq-RZ-LQ8"/>
@@ -308,7 +308,7 @@
                             <constraint firstItem="1vo-lO-a67" firstAttribute="leading" secondItem="whp-Ov-5zg" secondAttribute="leading" type="default" id="lm6-Dx-o5B"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Program" image="first.png" id="97n-vj-dex"/>
+                    <tabBarItem key="tabBarItem" title="Program" image="program.png" id="97n-vj-dex"/>
                     <connections>
                         <outlet property="navBar2" destination="uiE-lb-0vo" id="OTq-Ms-aj3"/>
                         <outlet property="programWebview" destination="1vo-lO-a67" id="TZu-BI-fU1"/>
@@ -540,7 +540,7 @@
                             <constraint firstItem="y5h-EH-tOo" firstAttribute="bottom" secondItem="0v2-P1-Kqx" secondAttribute="bottom" type="default" id="wj3-Ab-JlI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News" image="second.png" id="V71-zv-XMt"/>
+                    <tabBarItem key="tabBarItem" title="News" image="news.png" id="V71-zv-XMt"/>
                     <connections>
                         <outlet property="navBar2" destination="o08-hE-gxu" id="b9l-ON-V87"/>
                         <outlet property="newsWebview" destination="y5h-EH-tOo" id="ZNK-dF-RFc"/>
@@ -609,7 +609,7 @@
                             <constraint firstItem="rKj-2Q-4rh" firstAttribute="top" secondItem="M8A-3V-kv0" secondAttribute="top" constant="62" id="oh2-C5-Sc3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" image="first.png" id="B44-jG-vFu"/>
+                    <tabBarItem key="tabBarItem" title="More" image="more.png" id="B44-jG-vFu"/>
                     <connections>
                         <outlet property="about" destination="rKj-2Q-4rh" id="X6t-7c-mg4"/>
                         <outlet property="navBar2" destination="sUV-r8-XaH" id="njf-2s-OWB"/>
@@ -663,11 +663,116 @@
     </scenes>
     <resources>
         <image name="Alaqsa.jpg" width="612" height="612"/>
-        <image name="first" width="16" height="16"/>
-        <image name="first.png" width="30" height="30"/>
-        <image name="second" width="16" height="16"/>
-        <image name="second.png" width="30" height="30"/>
+        <image name="home.png" width="30" height="30"/>
+        <image name="more.png" width="30" height="30"/>
+        <image name="news.png" width="30" height="30"/>
+        <image name="pause.png" width="25" height="24"/>
+        <image name="play.png" width="25" height="24"/>
+        <image name="program.png" width="30" height="30"/>
+        <image name="share.png" width="25" height="24"/>
+        <image name="social.png" width="30" height="30"/>
+        <image name="stop.png" width="25" height="24"/>
     </resources>
+    <classes>
+        <class className="AboutVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutVC.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissModalController:"/>
+                <relationship kind="outlet" name="aboutInformationLabel" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="infoWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="navBarTitle" candidateClass="UINavigationItem"/>
+            </relationships>
+        </class>
+        <class className="FacebookVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FacebookVC.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissModalController:"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="facebookWebview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="HomeVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeVC.h"/>
+            <relationships>
+                <relationship kind="action" name="pause:"/>
+                <relationship kind="action" name="play:"/>
+                <relationship kind="action" name="stop:"/>
+                <relationship kind="outlet" name="alaqsaUILabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="flexible" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="metadatas" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="nowplaying" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pauseButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="playButton2" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="stopButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="MPVolumeView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MPVolumeView.h"/>
+        </class>
+        <class className="MoreVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoreVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="about" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="settings" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NewsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="newsWebview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="ProgramVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProgramVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="programWebview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="SettingsVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsVC.h"/>
+            <relationships>
+                <relationship kind="action" name="didOnly3GToggled:"/>
+                <relationship kind="action" name="didToggleQuality:"/>
+                <relationship kind="action" name="dismissModalController:"/>
+                <relationship kind="outlet" name="alwaysUseLowQualityLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="alwaysUseLowQualityWhenOn3G" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="quality" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="streamingQualityLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="threeG" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="use3gLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SocialVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="facebook" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="navBar2" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="twitter" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="TwitterVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterVC.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissModalController:"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="twitterWebview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

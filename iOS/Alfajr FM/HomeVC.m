@@ -40,17 +40,26 @@
 
 
 
--(void)initMisc{
+-(void)initMisc {
     
     self.alaqsaUILabel.text = @"";
     self.alaqsaUILabel = nil;
     
    // self.alaqsa.text = NSLocalizedString(@"alaqsa", nil);
-    self.playButton.title = NSLocalizedString(@"Play", nil);
-    self.stopButton.title = NSLocalizedString(@"Stop", nil);
-    self.pauseButton.title = NSLocalizedString(@"Pause", nil);
-    self.shareButton.title = NSLocalizedString(@"Share", nil);
-  
+    
+    self.playButton.isAccessibilityElement = YES;
+    self.stopButton.isAccessibilityElement = YES;
+    self.pauseButton.isAccessibilityElement = YES;
+    self.shareButton.isAccessibilityElement = YES;
+    
+    self.playButton.accessibilityLabel = NSLocalizedString(@"Play", nil);
+    self.stopButton.accessibilityLabel = NSLocalizedString(@"Stop", nil);
+    self.pauseButton.accessibilityLabel = NSLocalizedString(@"Pause", nil);
+    self.shareButton.accessibilityLabel = NSLocalizedString(@"Share", nil);
+    
+    
+    
+    
     self.navBar2.topItem.title =  NSLocalizedString(@"HomeVCTitle", nil);
     self.title =  NSLocalizedString(@"HomeVCTitle", nil);
    
@@ -89,6 +98,7 @@
 }
 
 -(void)radioDidStop{
+    
     DLog(@"");
     nowplaying.hidden = YES;
     metadatas.text = NSLocalizedString(@"stopped", nil);
@@ -103,8 +113,8 @@
     
     metadatas.text = metadata;
     
-    
 }
+
 -(BOOL)getNowPlayingHiddenBool{
     
     return nowplaying.hidden;
