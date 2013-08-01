@@ -110,8 +110,19 @@
 //getter and setter methods to access HomeViewContontroller's properties
 
 -(void)setMetadata:(NSString *)metadata{
+   
+    if(!metadata || [metadata isEqualToString:@""]){
+        
+        [metadatas setHidden:YES];
+        metadatas.text = @"";
+        
+        
+    } else {
+        
+        [metadatas setHidden:NO];
+        metadatas.text = metadata;
+    }
     
-    metadatas.text = metadata;
     
 }
 
