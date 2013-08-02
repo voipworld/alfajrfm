@@ -64,6 +64,9 @@
     self.title =  NSLocalizedString(@"HomeVCTitle", nil);
    
     self.metadatas.textAlignment = NSTextAlignmentCenter;
+    
+    
+
 }
 
 -(void)initRadioPlayer {
@@ -94,6 +97,7 @@
     
     DLog(@"");
     [self setButtonsForPlayingState];
+    metadatas.hidden = NO;
     
 }
 
@@ -101,7 +105,7 @@
     
     DLog(@"");
     nowplaying.hidden = YES;
-    metadatas.text = NSLocalizedString(@"stopped", nil);
+    metadatas.hidden = YES;    //metadatas.text = NSLocalizedString(@"stopped", nil);
     
     [self setButtonsForStoppedState];
     
@@ -201,6 +205,8 @@
 
 
 -(IBAction)stop:(id)sender{
+    
+
     
     [radioPlayer stopRadio];
 }
