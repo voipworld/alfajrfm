@@ -94,8 +94,8 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     [[AVAudioSession sharedInstance] setActive:YES error:nil];
     
-
-    [self playRadio];
+    player.allowsAirPlayVideo = YES;
+player.allowsAirPlayVideo = NO;
     
     
 } 

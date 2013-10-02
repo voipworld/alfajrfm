@@ -11,14 +11,14 @@
 //#define stream11 @"http://live.vobradio.org:8000/live" //highquality
 //#define stream22 @"http://live.vobradio.org:8000/live24"
 
-#define stream11 @"http://s2.voscast.com:7716" //highquality
+#define stream11 @"http://live.atyaf.co:8008/;stream" //highquality
 #define stream22 @"http://s2.voscast.com:7716"
 
 
 #define kNEWS_URL @"http://www.alfajrfm.com/news/"
 #define kPROGRAM_URL @"http://www.alfajrfm.com/"
 
-#define kURLTwitter @"http://twitter.com/alfajrfm"
+#define kURLTwitter @"http://twitter.com/radioalresalah"
 #define kURLFacebook @"http://facebook.com/alfajrfm"
 
 
@@ -66,7 +66,7 @@ static URLS* _sharedInstance = nil;
 
 
 - (id)init {
-    if (self = [super init]) {
+    if (self =  [super init]) {
 
         self.stream1 = stream11;
         self.stream2 = stream22;

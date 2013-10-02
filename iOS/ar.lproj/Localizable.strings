@@ -11,50 +11,50 @@
 
 "HomeVCTitle" = "الصفحة الرئيسية";
 "NewsVCTitle" = "أخبار";
-"ProgramVCTitle" = "برنامج";
-"SocialVCTitle" = "الاجتماعية";
+"ProgramVCTitle" = "البرامج";
+"SocialVCTitle" = "التواصل الإجتماعى";
 
     "TwitterVCTitle" = "تويتر";
     "FacebookVCTitle" = "الفيسبوك";
 "SettingsVCTitle" = "إعدادات";
-"MoreVCTitle" = "أكثر";
+"MoreVCTitle" = "للمزيد";
 
 //home VC
 
 "alaqsa" = "الأقصى، ونحن مستمدة!";
 
-"Play" = "اللعب";
-"Pause" = "وقفة";
+"Play" = "تشغيل";
+"Pause" = "إيقاف مؤقت";
 "Stop" = "إيقاف";
-"Share" = "مشاركة";
+"Share" = "دعوة صديق";
 
 
 //settings VC
 
 "use3gLabel" = "Use 3G";
-"streamingQualityLabel" = "الجودة الجري";
+"streamingQualityLabel" = "جودة البث";
 "alwaysUseLowQualityLabel" = "استخدم دائما جودة منخفضة على الجيل الثالث 3G عند";
 "settings" = "إعدادات";
 
-"low" = "منخفض";
-"high" = "عالية";
+"low" = "الجودة المنخفضة";
+"high" = "الجودة العالية";
 
-"on" = "على";
+"on" = "تشغيل";
 "off" = "إيقاف";
 
 
 //about VC
 
 
-"aboutInformationLabel" = "Alfajr FM Copyright ©\nAlfajr FM Radio\nPhone: +447061200050\nsite: http://www.alfajrfm.com\nemail: pr@vobradio.org";
-"about" = "حول";
+"aboutInformationLabel" = " - radio.alresalah@hotmail.com راديو الرسالة عبر الإنترنت  - فلسطين - غزة 0097082874044";
+"about" = "حول التطبيق";
 
 //social 
-"connect_on_facebook" = "الاتصال في الفيسبوك";
-"follow_on_twitter" = "على متابعة التغريد";
+"connect_on_facebook" = "تابعنا  بالفيسبوك";
+"follow_on_twitter" = "تابعنا بتويتر";
 
 //generic
 
 "back" = "العودة";
 "loading" = "تحميل";
-"stopped" = "توقف";
+"stopped" = "متوقف";  
