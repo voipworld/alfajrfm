@@ -126,10 +126,10 @@ player.allowsAirPlayVideo = NO;
     } else {
         
         // DLog(@"was paused");
-        [player play];
+        
         
     }
-    
+    [player play];
     [self.delegate radioDidPlay];
     
 }
