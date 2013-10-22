@@ -35,9 +35,13 @@
 	
     [self initMisc];
     [self initRadioPlayer];
+  
     
 }
-
+//-(void) viewDidAppear:(BOOL)animated {
+//    [super viewDidAppear:animated];
+//   
+//}
 
 
 -(void)initMisc {
@@ -315,6 +319,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self startBackgroundGestures];
+     [self play:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
