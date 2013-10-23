@@ -17,14 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" image="Alaqsa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cwL-VY-X6V">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Alaqsa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cwL-VY-X6V">
                                 <rect key="frame" x="24" y="89" width="273" height="273"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="273" id="DtR-Ll-shf"/>
-                                    <constraint firstAttribute="width" constant="273" id="n6m-3y-byC"/>
-                                </constraints>
                             </imageView>
-                            <toolbar autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="nTk-hJ-ptD">
+                            <toolbar autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="nTk-hJ-ptD">
                                 <rect key="frame" x="0.0" y="367" width="320" height="44"/>
                                 <items>
                                     <barButtonItem image="play.png" id="Tlc-Sg-ehi">
@@ -78,7 +74,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="bzR-uI-g1O">
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="bzR-uI-g1O">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Home" id="CJS-JO-xua"/>
@@ -86,6 +82,17 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MlL-Jx-Yt7" firstAttribute="top" secondItem="nTk-hJ-ptD" secondAttribute="bottom" constant="20" id="7wI-gn-9af"/>
+                            <constraint firstItem="cwL-VY-X6V" firstAttribute="top" secondItem="bzR-uI-g1O" secondAttribute="bottom" constant="25" id="BOV-8h-vTF"/>
+                            <constraint firstItem="bzR-uI-g1O" firstAttribute="top" secondItem="vga-tc-46S" secondAttribute="bottom" id="Rbz-hT-lxl"/>
+                            <constraint firstItem="nTk-hJ-ptD" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="XyG-Ra-kTP"/>
+                            <constraint firstAttribute="trailing" secondItem="cwL-VY-X6V" secondAttribute="trailing" constant="23" id="cow-U3-WCv"/>
+                            <constraint firstItem="cwL-VY-X6V" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="24" id="dR5-CJ-Hzw"/>
+                            <constraint firstItem="bzR-uI-g1O" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="hlu-Vo-CPX"/>
+                            <constraint firstAttribute="trailing" secondItem="nTk-hJ-ptD" secondAttribute="trailing" id="jPk-Yq-qbd"/>
+                            <constraint firstAttribute="trailing" secondItem="bzR-uI-g1O" secondAttribute="trailing" id="nD5-EM-T0g"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home.png" id="7"/>
                     <connections>
@@ -102,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="861" y="-954"/>
+            <point key="canvasLocation" x="774" y="-954"/>
         </scene>
         <!--SocialVC - Second-->
         <scene sceneID="13">
@@ -140,7 +147,7 @@
                                     <segue destination="6UD-6F-YNk" kind="modal" id="V1M-yy-J8h"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="mu9-XQ-PJF">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="mu9-XQ-PJF">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Social" id="BpM-8o-eK2"/>
@@ -148,6 +155,13 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="67y-8g-iiz" secondAttribute="centerX" id="3BE-tb-ldu"/>
+                            <constraint firstAttribute="trailing" secondItem="mu9-XQ-PJF" secondAttribute="trailing" id="I9v-61-BYM"/>
+                            <constraint firstItem="mu9-XQ-PJF" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="Inj-1u-a9A"/>
+                            <constraint firstItem="mu9-XQ-PJF" firstAttribute="top" secondItem="ZfN-wt-ePG" secondAttribute="bottom" id="e4g-6n-ZgB"/>
+                            <constraint firstAttribute="centerX" secondItem="Ou9-x8-X6d" secondAttribute="centerX" id="its-vs-nNj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="social.png" id="6"/>
                     <connections>
@@ -172,7 +186,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0w0-5s-TvN">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0w0-5s-TvN">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Twitter" id="UvB-64-tgs">
@@ -184,14 +198,21 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uy-KP-mVq">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uy-KP-mVq">
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0w0-5s-TvN" firstAttribute="top" secondItem="z1A-ct-7YP" secondAttribute="bottom" id="7Fp-zN-k6f"/>
+                            <constraint firstItem="0w0-5s-TvN" firstAttribute="leading" secondItem="Qbz-7O-Xfw" secondAttribute="leading" id="8B0-IF-3zi"/>
+                            <constraint firstItem="2uy-KP-mVq" firstAttribute="top" secondItem="0w0-5s-TvN" secondAttribute="bottom" id="9gR-2n-Zlz"/>
+                            <constraint firstAttribute="trailing" secondItem="2uy-KP-mVq" secondAttribute="trailing" id="GE4-eK-tp6"/>
+                            <constraint firstItem="djM-YL-q2h" firstAttribute="top" secondItem="2uy-KP-mVq" secondAttribute="bottom" id="K2w-nC-iDV"/>
+                            <constraint firstItem="2uy-KP-mVq" firstAttribute="leading" secondItem="Qbz-7O-Xfw" secondAttribute="leading" id="TUy-F8-vK8"/>
                             <constraint firstItem="2uy-KP-mVq" firstAttribute="top" secondItem="0w0-5s-TvN" secondAttribute="bottom" id="UEF-Hk-eXt"/>
+                            <constraint firstAttribute="trailing" secondItem="0w0-5s-TvN" secondAttribute="trailing" id="WeE-ik-ims"/>
                             <constraint firstItem="djM-YL-q2h" firstAttribute="top" secondItem="2uy-KP-mVq" secondAttribute="bottom" id="f9Z-fw-2Xd"/>
                         </constraints>
                     </view>
@@ -216,7 +237,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bki-Qh-Rlh">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bki-Qh-Rlh">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Facebook" id="h1K-S4-khF">
@@ -228,7 +249,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtB-Lq-1KH">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtB-Lq-1KH">
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -236,7 +257,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XtB-Lq-1KH" firstAttribute="top" secondItem="bki-Qh-Rlh" secondAttribute="bottom" id="2Kv-i3-vpd"/>
+                            <constraint firstItem="XtB-Lq-1KH" firstAttribute="leading" secondItem="ydl-ie-dba" secondAttribute="leading" id="IMD-sH-VSo"/>
+                            <constraint firstItem="bki-Qh-Rlh" firstAttribute="leading" secondItem="ydl-ie-dba" secondAttribute="leading" id="IxY-XJ-k16"/>
+                            <constraint firstItem="GzD-cw-qsv" firstAttribute="top" secondItem="XtB-Lq-1KH" secondAttribute="bottom" id="Jor-3Y-3c6"/>
                             <constraint firstItem="GzD-cw-qsv" firstAttribute="top" secondItem="XtB-Lq-1KH" secondAttribute="bottom" id="QV7-eG-S5I"/>
+                            <constraint firstItem="XtB-Lq-1KH" firstAttribute="top" secondItem="bki-Qh-Rlh" secondAttribute="bottom" id="Qf2-xF-knG"/>
+                            <constraint firstItem="bki-Qh-Rlh" firstAttribute="top" secondItem="KIi-QX-7yL" secondAttribute="bottom" id="Zxi-W6-WaE"/>
+                            <constraint firstAttribute="trailing" secondItem="XtB-Lq-1KH" secondAttribute="trailing" id="emF-Tu-qKK"/>
+                            <constraint firstAttribute="trailing" secondItem="bki-Qh-Rlh" secondAttribute="trailing" id="xBo-DC-ffv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -270,11 +298,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vo-lO-a67">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vo-lO-a67">
                                 <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="uiE-lb-0vo">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="uiE-lb-0vo">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Program" id="SUu-4j-moe"/>
@@ -283,8 +311,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1vo-lO-a67" firstAttribute="top" secondItem="uiE-lb-0vo" secondAttribute="bottom" id="52r-fO-YvJ"/>
+                            <constraint firstItem="11y-Ar-YU0" firstAttribute="top" secondItem="1vo-lO-a67" secondAttribute="bottom" id="7HE-2I-E1J"/>
+                            <constraint firstItem="uiE-lb-0vo" firstAttribute="leading" secondItem="whp-Ov-5zg" secondAttribute="leading" id="98u-KX-xvS"/>
                             <constraint firstItem="11y-Ar-YU0" firstAttribute="top" secondItem="1vo-lO-a67" secondAttribute="bottom" id="Iof-Fq-mkQ"/>
                             <constraint firstItem="1vo-lO-a67" firstAttribute="top" secondItem="uiE-lb-0vo" secondAttribute="bottom" id="PEm-k5-6jZ"/>
+                            <constraint firstAttribute="trailing" secondItem="uiE-lb-0vo" secondAttribute="trailing" id="Z2c-sa-rPd"/>
+                            <constraint firstItem="uiE-lb-0vo" firstAttribute="top" secondItem="UU2-y5-wfR" secondAttribute="bottom" id="dPa-bc-iaX"/>
+                            <constraint firstItem="1vo-lO-a67" firstAttribute="leading" secondItem="whp-Ov-5zg" secondAttribute="leading" id="dek-gc-4jo"/>
+                            <constraint firstAttribute="trailing" secondItem="1vo-lO-a67" secondAttribute="trailing" id="gkV-zi-IaZ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Program" image="program.png" id="97n-vj-dex"/>
@@ -309,7 +344,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLG-Mi-aSi">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLG-Mi-aSi">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="About" id="ddv-jN-Qx1">
@@ -333,6 +368,12 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dCM-IV-1hJ" secondAttribute="centerX" id="ITJ-6E-4Zb"/>
+                            <constraint firstItem="aLG-Mi-aSi" firstAttribute="top" secondItem="Fey-FD-PjG" secondAttribute="bottom" id="Wpm-fo-8JP"/>
+                            <constraint firstAttribute="trailing" secondItem="aLG-Mi-aSi" secondAttribute="trailing" id="mUU-bn-7VE"/>
+                            <constraint firstItem="aLG-Mi-aSi" firstAttribute="leading" secondItem="EDY-E8-fgU" secondAttribute="leading" id="uXh-4B-UIx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" id="P2b-1n-kvh"/>
                     <connections>
@@ -500,11 +541,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5h-EH-tOo">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5h-EH-tOo">
                                 <rect key="frame" x="0.0" y="64" width="320" height="366"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="o08-hE-gxu">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="o08-hE-gxu">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="News" id="ntz-SU-fbm"/>
@@ -514,10 +555,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="y5h-EH-tOo" firstAttribute="leading" secondItem="0v2-P1-Kqx" secondAttribute="leading" id="96j-ad-LO1"/>
+                            <constraint firstAttribute="trailing" secondItem="o08-hE-gxu" secondAttribute="trailing" id="OtH-Pk-V3t"/>
                             <constraint firstItem="RXZ-eG-dhR" firstAttribute="top" secondItem="y5h-EH-tOo" secondAttribute="bottom" constant="1" id="SAT-x6-zyX"/>
                             <constraint firstItem="y5h-EH-tOo" firstAttribute="top" secondItem="o08-hE-gxu" secondAttribute="bottom" id="UVP-bn-lDR"/>
                             <constraint firstItem="DQX-6I-FDk" firstAttribute="top" secondItem="0v2-P1-Kqx" secondAttribute="top" constant="153" id="VIx-Zh-t2v"/>
+                            <constraint firstItem="o08-hE-gxu" firstAttribute="top" secondItem="VuF-D4-Uxx" secondAttribute="bottom" id="bMR-d1-A13"/>
                             <constraint firstItem="y5h-EH-tOo" firstAttribute="centerX" secondItem="DQX-6I-FDk" secondAttribute="centerX" id="fZS-RY-MIz"/>
+                            <constraint firstItem="o08-hE-gxu" firstAttribute="leading" secondItem="0v2-P1-Kqx" secondAttribute="leading" id="ke4-ZF-KhN"/>
                             <constraint firstItem="y5h-EH-tOo" firstAttribute="trailing" secondItem="0v2-P1-Kqx" secondAttribute="trailing" id="s4u-vl-zVj"/>
                             <constraint firstItem="y5h-EH-tOo" firstAttribute="bottom" secondItem="0v2-P1-Kqx" secondAttribute="bottom" id="wj3-Ab-JlI"/>
                         </constraints>
@@ -568,7 +612,7 @@
                                     <segue destination="72t-mz-ksG" kind="modal" id="AbD-Om-Her"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-r8-XaH">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-r8-XaH">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="More" id="Tre-82-GTf"/>
@@ -576,6 +620,13 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sUV-r8-XaH" secondAttribute="trailing" id="9Ci-Yr-Vli"/>
+                            <constraint firstAttribute="centerX" secondItem="rKj-2Q-4rh" secondAttribute="centerX" id="LH6-is-wTl"/>
+                            <constraint firstItem="sUV-r8-XaH" firstAttribute="leading" secondItem="M8A-3V-kv0" secondAttribute="leading" id="ZQl-aI-nvH"/>
+                            <constraint firstItem="sUV-r8-XaH" firstAttribute="top" secondItem="2Or-Uw-dk4" secondAttribute="bottom" id="giD-3W-5eK"/>
+                            <constraint firstAttribute="centerX" secondItem="dDW-Qq-xPY" secondAttribute="centerX" id="ycA-h0-y7F"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="more.png" id="B44-jG-vFu"/>
                     <connections>

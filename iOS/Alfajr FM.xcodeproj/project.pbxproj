@@ -26,9 +26,9 @@
 		7F3F3E6E16F7393700B3DE60 /* TwitterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E6C16F7393600B3DE60 /* TwitterVC.m */; };
 		7F3F3E7116F7394600B3DE60 /* FacebookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7016F7394600B3DE60 /* FacebookVC.m */; };
 		7F3F3E7216F7394600B3DE60 /* FacebookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7016F7394600B3DE60 /* FacebookVC.m */; };
-		7F3F3E7B16F7405700B3DE60 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7816F7405600B3DE60 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc "; }; };
+		7F3F3E7B16F7405700B3DE60 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7816F7405600B3DE60 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F3F3E7C16F7405700B3DE60 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7816F7405600B3DE60 /* Reachability.m */; };
-		7F3F3E7D16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc "; }; };
+		7F3F3E7D16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F3F3E7E16F7405700B3DE60 /* ReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F3E7A16F7405600B3DE60 /* ReachabilityAppDelegate.m */; };
 		7F46B3A616F0435400FF2E38 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F46B3A516F0435400FF2E38 /* AVFoundation.framework */; };
 		7F46B3A916F0436F00FF2E38 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F46B3A816F0436F00FF2E38 /* CoreMedia.framework */; };
@@ -502,6 +502,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Alfajr FM";
+				TargetAttributes = {
+					7FD06DCD16EF6E7E007F2520 = {
+						DevelopmentTeam = F3SK9N36GR;
+					};
+				};
 			};
 			buildConfigurationList = 7FD06DC816EF6E7D007F2520 /* Build configuration list for PBXProject "Alfajr FM" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -769,7 +774,7 @@
 		7FD06E1416EF6E7E007F2520 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dar Al WAtan for Journalism Printing and Publishing K.S.C (F3SK9N36GR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -782,7 +787,7 @@
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "57D5DCC0-A834-4B80-8752-B92F0199F28A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
