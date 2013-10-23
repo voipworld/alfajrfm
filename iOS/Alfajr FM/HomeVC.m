@@ -35,8 +35,7 @@
 	
     [self initMisc];
     [self initRadioPlayer];
-  
-    
+//    img.hidden = YES;
 }
 //-(void) viewDidAppear:(BOOL)animated {
 //    [super viewDidAppear:animated];
@@ -309,17 +308,18 @@
     alaqsaUILabel = nil;
     [self setAlaqsaUILabel:nil];
     [super viewDidUnload];
+  
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self startBackgroundGestures];
-     [self play:nil];
+    [self play:nil];
+    img.frame = CGRectMake(self.view.frame.size.width/2 - img.frame.size.width/2, img.frame.origin.y, img.frame.size.width, img.frame.size.height);
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

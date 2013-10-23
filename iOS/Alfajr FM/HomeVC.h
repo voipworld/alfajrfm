@@ -24,6 +24,7 @@
     IBOutlet UINavigationBar *navBar2;
     
     RadioPlayer *radioPlayer;
+    IBOutlet UIImageView* img;
 }
 
 

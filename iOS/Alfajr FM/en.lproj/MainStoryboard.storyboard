@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Alaqsa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cwL-VY-X6V">
-                                <rect key="frame" x="24" y="89" width="273" height="273"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Alaqsa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cwL-VY-X6V">
+                                <rect key="frame" x="24" y="73" width="273" height="273"/>
                             </imageView>
                             <toolbar autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="nTk-hJ-ptD">
                                 <rect key="frame" x="0.0" y="367" width="320" height="44"/>
@@ -84,11 +84,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MlL-Jx-Yt7" firstAttribute="top" secondItem="nTk-hJ-ptD" secondAttribute="bottom" constant="20" id="7wI-gn-9af"/>
-                            <constraint firstItem="cwL-VY-X6V" firstAttribute="top" secondItem="bzR-uI-g1O" secondAttribute="bottom" constant="25" id="BOV-8h-vTF"/>
                             <constraint firstItem="bzR-uI-g1O" firstAttribute="top" secondItem="vga-tc-46S" secondAttribute="bottom" id="Rbz-hT-lxl"/>
                             <constraint firstItem="nTk-hJ-ptD" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="XyG-Ra-kTP"/>
-                            <constraint firstAttribute="trailing" secondItem="cwL-VY-X6V" secondAttribute="trailing" constant="23" id="cow-U3-WCv"/>
-                            <constraint firstItem="cwL-VY-X6V" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="24" id="dR5-CJ-Hzw"/>
                             <constraint firstItem="bzR-uI-g1O" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="hlu-Vo-CPX"/>
                             <constraint firstAttribute="trailing" secondItem="nTk-hJ-ptD" secondAttribute="trailing" id="jPk-Yq-qbd"/>
                             <constraint firstAttribute="trailing" secondItem="bzR-uI-g1O" secondAttribute="trailing" id="nD5-EM-T0g"/>
@@ -98,6 +95,7 @@
                     <connections>
                         <outlet property="alaqsaUILabel" destination="nQ9-xE-lpT" id="5bt-Ax-R4h"/>
                         <outlet property="flexible" destination="eoK-EH-Uhn" id="vak-z0-w5L"/>
+                        <outlet property="img" destination="cwL-VY-X6V" id="mEH-cN-3NY"/>
                         <outlet property="metadatas" destination="6qQ-yJ-5KL" id="et0-UL-TrI"/>
                         <outlet property="navBar2" destination="bzR-uI-g1O" id="RPg-ti-WX7"/>
                         <outlet property="pauseButton" destination="0lo-fH-gpK" id="rmC-RE-TWY"/>
