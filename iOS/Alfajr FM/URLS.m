@@ -15,7 +15,7 @@
 #define stream22 @"http://s2.voscast.com:7716"
 
 
-#define kNEWS_URL @"http://www.alfajrfm.com/news/"
+#define kNEWS_URL @"http://radio.alresalah.ps/m/"
 #define kPROGRAM_URL @"http://www.alfajrfm.com/"
 
 #define kURLTwitter @"http://twitter.com/radioalresalah"
