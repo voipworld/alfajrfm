@@ -91,6 +91,8 @@
 		7FDC1E5C1725EE1700238C0C /* URLS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC1E5A1725EE1700238C0C /* URLS.m */; };
 		F1575338171DC5E30065BD1A /* icon7272.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575337171DC5E30065BD1A /* icon7272.png */; };
 		F157533A171DC5EE0065BD1A /* icon144144.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575339171DC5EE0065BD1A /* icon144144.png */; };
+		F1C83C3618E921BF0092BD76 /* 444441.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C3418E921BF0092BD76 /* 444441.jpg */; };
+		F1C83C3718E921BF0092BD76 /* 444441.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C3518E921BF0092BD76 /* 444441.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +197,8 @@
 		F1575337171DC5E30065BD1A /* icon7272.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon7272.png; sourceTree = "<group>"; };
 		F1575339171DC5EE0065BD1A /* icon144144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144144.png; sourceTree = "<group>"; };
 		F157533B171DC6560065BD1A /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		F1C83C3418E921BF0092BD76 /* 444441.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 444441.jpg; sourceTree = "<group>"; };
+		F1C83C3518E921BF0092BD76 /* 444441.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 444441.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +351,8 @@
 		7FD06DD916EF6E7E007F2520 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1C83C3418E921BF0092BD76 /* 444441.jpg */,
+				F1C83C3518E921BF0092BD76 /* 444441.png */,
 				7F9E009717AAF70800359FFB /* images for buttons */,
 				7F3F3E5A16F71BA100B3DE60 /* Alaqsa.jpg */,
 				7F3F3E6816F72D6900B3DE60 /* Alaqsa_small.jpg */,
@@ -536,6 +542,7 @@
 			files = (
 				7FD06DDD16EF6E7E007F2520 /* InfoPlist.strings in Resources */,
 				7FD06DEC16EF6E7E007F2520 /* MainStoryboard.storyboard in Resources */,
+				F1C83C3618E921BF0092BD76 /* 444441.jpg in Resources */,
 				7FD06DF816EF6E7E007F2520 /* second.png in Resources */,
 				7FD06DFA16EF6E7E007F2520 /* second@2x.png in Resources */,
 				7F3F3E5B16F71BA100B3DE60 /* Alaqsa.jpg in Resources */,
@@ -551,6 +558,7 @@
 				7FA98129179E175B0050FCA7 /* Default-Portrait~ipad.png in Resources */,
 				7FA9812B179E17610050FCA7 /* Default-Portrait@2x~ipad.png in Resources */,
 				7FA9812D179E17650050FCA7 /* Default-Landscape~ipad.png in Resources */,
+				F1C83C3718E921BF0092BD76 /* 444441.png in Resources */,
 				7FA9812F179E18160050FCA7 /* Default-Landscape@2x~ipad.png in Resources */,
 				7F9E00B017AAF70800359FFB /* home.png in Resources */,
 				7F9E00B117AAF70800359FFB /* home@2x.png in Resources */,
