@@ -91,6 +91,8 @@
 		7FDC1E5C1725EE1700238C0C /* URLS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC1E5A1725EE1700238C0C /* URLS.m */; };
 		F1575338171DC5E30065BD1A /* icon7272.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575337171DC5E30065BD1A /* icon7272.png */; };
 		F157533A171DC5EE0065BD1A /* icon144144.png in Resources */ = {isa = PBXBuildFile; fileRef = F1575339171DC5EE0065BD1A /* icon144144.png */; };
+		F1C83C3218E91F050092BD76 /* 444441.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C3118E91F050092BD76 /* 444441.jpg */; };
+		F1C83C3318E91F050092BD76 /* 444441.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C83C3118E91F050092BD76 /* 444441.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +197,7 @@
 		F1575337171DC5E30065BD1A /* icon7272.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon7272.png; sourceTree = "<group>"; };
 		F1575339171DC5EE0065BD1A /* icon144144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144144.png; sourceTree = "<group>"; };
 		F157533B171DC6560065BD1A /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		F1C83C3118E91F050092BD76 /* 444441.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 444441.jpg; path = ../../../../Desktop/444441.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,7 @@
 		7FA98128179E14880050FCA7 /* icons and launch images */ = {
 			isa = PBXGroup;
 			children = (
+				F1C83C3118E91F050092BD76 /* 444441.jpg */,
 				7FA9812E179E18160050FCA7 /* Default-Landscape@2x~ipad.png */,
 				7FA9812C179E17650050FCA7 /* Default-Landscape~ipad.png */,
 				F157533B171DC6560065BD1A /* Default-Portrait~ipad.png */,
@@ -536,6 +540,7 @@
 			files = (
 				7FD06DDD16EF6E7E007F2520 /* InfoPlist.strings in Resources */,
 				7FD06DEC16EF6E7E007F2520 /* MainStoryboard.storyboard in Resources */,
+				F1C83C3218E91F050092BD76 /* 444441.jpg in Resources */,
 				7FD06DF816EF6E7E007F2520 /* second.png in Resources */,
 				7FD06DFA16EF6E7E007F2520 /* second@2x.png in Resources */,
 				7F3F3E5B16F71BA100B3DE60 /* Alaqsa.jpg in Resources */,
@@ -578,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FD06E0C16EF6E7E007F2520 /* InfoPlist.strings in Resources */,
+				F1C83C3318E91F050092BD76 /* 444441.jpg in Resources */,
 				7F3F3E5C16F71BA100B3DE60 /* Alaqsa.jpg in Resources */,
 				7F3F3E6A16F72D6900B3DE60 /* Alaqsa_small.jpg in Resources */,
 				7FBA61F21709A15700AB6251 /* Localizable.strings in Resources */,
