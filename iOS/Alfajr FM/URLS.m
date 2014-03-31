@@ -34,7 +34,8 @@ static URLS* _sharedInstance = nil;
 	@synchronized([URLS class])
 	{
 		if (!_sharedInstance)
-			[[self alloc] init];
+            _sharedInstance = [[self alloc] init];
+			// [[self alloc] init];
         
 		return _sharedInstance;
 	}

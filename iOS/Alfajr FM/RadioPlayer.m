@@ -94,8 +94,11 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     [[AVAudioSession sharedInstance] setActive:YES error:nil];
     
-    player.allowsAirPlayVideo = YES;
-player.allowsAirPlayVideo = NO;
+    // player.allowsAirPlayVideo = YES;
+    // player.allowsAirPlayVideo = NO;
+    
+    player.allowsExternalPlayback = YES;
+    player.allowsExternalPlayback = NO;
     
     
 } 
